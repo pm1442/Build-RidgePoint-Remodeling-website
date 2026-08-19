@@ -42,7 +42,7 @@ export default function HomePage() {
         </div>
         <div className="service-grid">
           {services.map((service, index) => (
-            <Link className={`service-card service-card-${index + 1}`} href={`/services/${service.slug}`} key={service.slug}>
+            <Link className={`service-card service-card-${index + 1}`} href={`/services/${service.slug}`} key={service.slug} aria-label={`Explore ${service.name}`}>
               <Image className="service-card-image" src={serviceImages[index]} fill sizes="(max-width: 820px) 100vw, 50vw" alt="" />
               <span className="service-card-scrim" />
               <div className="service-card-content"><p>{service.eyebrow}</p><h3>{service.name}</h3><span>{service.summary}</span></div>
