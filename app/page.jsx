@@ -4,6 +4,8 @@ import { PageFrame } from "./components/page-frame";
 import { SiteSchema } from "./components/site-schema";
 import { faqs, services, site } from "./lib/site-data";
 
+const serviceImages = ["/images/placement-kitchen.png", "/images/placement-bathroom.png", "/images/placement-cabinetry.png", "/images/placement-cabinetry.png", "/images/placement-deck.png", "/images/deck-concept-placeholder.png"];
+
 export default function HomePage() {
   return (
     <PageFrame>
@@ -41,9 +43,9 @@ export default function HomePage() {
         <div className="service-grid">
           {services.map((service, index) => (
             <Link className={`service-card service-card-${index + 1}`} href={`/services/${service.slug}`} key={service.slug}>
-              <p>{service.eyebrow}</p>
-              <h3>{service.name}</h3>
-              <span>{service.summary}</span>
+              <Image className="service-card-image" src={serviceImages[index]} fill sizes="(max-width: 820px) 100vw, 50vw" alt="" />
+              <span className="service-card-scrim" />
+              <div className="service-card-content"><p>{service.eyebrow}</p><h3>{service.name}</h3><span>{service.summary}</span></div>
             </Link>
           ))}
         </div>
