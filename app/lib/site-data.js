@@ -24,6 +24,12 @@ export const site = {
     "Live Oak",
     "Keystone Heights",
   ],
+  locationPages: [
+    { city: "Lake Butler", slug: "remodeling-contractor-lake-butler-fl" },
+    { city: "Gainesville", slug: "remodeling-contractor-gainesville-fl" },
+    { city: "Lake City", slug: "remodeling-contractor-lake-city-fl" },
+    { city: "Lake Butler", slug: "deck-builder-lake-butler-fl" },
+  ],
 };
 
 export const services = [

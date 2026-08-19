@@ -4,14 +4,14 @@ import { PageFrame } from "./components/page-frame";
 import { SiteSchema } from "./components/site-schema";
 import { faqs, services, site } from "./lib/site-data";
 
-const serviceImages = ["/images/placement-kitchen.png", "/images/placement-bathroom.png", "/images/placement-cabinetry.png", "/images/placement-cabinetry.png", "/images/placement-deck.png", "/images/deck-concept-placeholder.png"];
+const serviceImages = ["/images/placement-kitchen.webp", "/images/placement-bathroom.webp", "/images/placement-cabinetry.webp", "/images/placement-cabinetry.webp", "/images/placement-deck.webp", "/images/deck-concept-placeholder.webp"];
 
 export default function HomePage() {
   return (
     <PageFrame>
       <SiteSchema />
       <section className="hero">
-        <Image className="hero-image" src="/images/deck-concept-placeholder.png" fill priority sizes="100vw" alt="Concept placeholder for a RidgePoint deck project" />
+        <Image className="hero-image" src="/images/deck-concept-placeholder.webp" fill priority sizes="100vw" alt="Concept placeholder for a RidgePoint deck project" />
         <div className="hero-scrim" />
         <div className="shell hero-content">
           <p className="eyebrow">Lake Butler, Florida</p>

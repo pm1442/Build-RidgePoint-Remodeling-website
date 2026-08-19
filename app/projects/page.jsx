@@ -6,9 +6,9 @@ export const metadata = { title: "Project Gallery" };
 
 export default function ProjectsPage() {
   const galleries = [
-    { title: "Kitchens and cabinetry", copy: "Cabinet layouts, storage, and finish details that support everyday use.", images: [["/images/placement-kitchen.png", "Kitchen renovation placement image"], ["/images/placement-cabinetry.png", "Cabinetry and finish carpentry placement image"]] },
-    { title: "Bathrooms and finish work", copy: "Thoughtful room updates paired with the trim and cabinetry details that make a space feel complete.", images: [["/images/placement-bathroom.png", "Bathroom renovation placement image"], ["/images/placement-cabinetry.png", "Finish carpentry placement image"]] },
-    { title: "Decks and outdoor living", copy: "Outdoor structures designed around the home, the yard, and the way you want to spend time outside.", images: [["/images/placement-deck.png", "Outdoor deck placement image"], ["/images/deck-concept-placeholder.png", "Outdoor deck concept placement image"]] },
+    { title: "Kitchens and cabinetry", copy: "Cabinet layouts, storage, and finish details that support everyday use.", images: [["/images/placement-kitchen.webp", "Kitchen renovation placement image"], ["/images/placement-cabinetry.webp", "Cabinetry and finish carpentry placement image"]] },
+    { title: "Bathrooms and finish work", copy: "Thoughtful room updates paired with the trim and cabinetry details that make a space feel complete.", images: [["/images/placement-bathroom.webp", "Bathroom renovation placement image"], ["/images/placement-cabinetry.webp", "Finish carpentry placement image"]] },
+    { title: "Decks and outdoor living", copy: "Outdoor structures designed around the home, the yard, and the way you want to spend time outside.", images: [["/images/placement-deck.webp", "Outdoor deck placement image"], ["/images/deck-concept-placeholder.webp", "Outdoor deck concept placement image"]] },
   ];
 
   return (
