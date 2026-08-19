@@ -1,0 +1,7 @@
+.next/
+.vercel/
+node_modules/
+.env*
+.seo-cache/
+work/npm-cache/
+work/
