@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageFrame } from "../../components/page-frame";
-import { getService, site } from "../../lib/site-data";
+import { faqs, getService, site } from "../../lib/site-data";
 
 export function generateStaticParams() {
-  return ["kitchen-remodeling", "bathroom-remodeling", "cabinet-installation", "custom-carpentry", "deck-building"].map((slug) => ({ slug }));
+  return ["kitchen-remodeling", "bathroom-remodeling", "cabinet-sales-installation", "custom-carpentry", "deck-building", "flooring-siding-windows"].map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }) {
@@ -47,8 +47,7 @@ export default function ServicePage({ params }) {
         <div className="shell faq-grid">
           <div><p className="eyebrow">Planning well</p><h2>Questions worth asking early.</h2></div>
           <div>
-            <details><summary>Do you provide an estimate before work begins?</summary><p>Yes. The estimate conversation is where RidgePoint can confirm scope, site conditions, and the next steps for your project.</p></details>
-            <details><summary>Do you serve my area?</summary><p>RidgePoint serves Lake Butler and surrounding North Central Florida communities. Contact us with your location and project to confirm fit.</p></details>
+            {faqs.slice(0, 4).map((faq) => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}
           </div>
         </div>
       </section>

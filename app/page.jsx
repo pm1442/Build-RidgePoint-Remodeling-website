@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageFrame } from "./components/page-frame";
 import { SiteSchema } from "./components/site-schema";
-import { services, site } from "./lib/site-data";
+import { faqs, services, site } from "./lib/site-data";
 
 export default function HomePage() {
   return (
@@ -14,7 +14,7 @@ export default function HomePage() {
         <div className="shell hero-content">
           <p className="eyebrow">Lake Butler, Florida</p>
           <h1>Craftsmanship that feels at home.</h1>
-          <p className="hero-copy">Remodeling, custom carpentry, and outdoor decks built for the way you live.</p>
+          <p className="hero-copy">Home improvement, finish carpentry, cabinet sales and installation, and outdoor decks built for the way you live.</p>
           <div className="hero-actions">
             <Link className="button" href="/contact">Request a Quote</Link>
             <a className="button button-quiet" href={`tel:${site.phone}`}>Call {site.phoneDisplay}</a>
@@ -28,7 +28,7 @@ export default function HomePage() {
           <h2>A straightforward partner for projects that matter.</h2>
         </div>
         <div className="intro-copy">
-          <p>RidgePoint brings hands-on remodeling and carpentry together under one roof. From a kitchen update to a new outdoor deck, the work starts with a clear conversation and ends with details that hold up.</p>
+          <p>RidgePoint brings hands-on home improvement and finish carpentry together under one roof. From a kitchen update to a new outdoor deck, the work starts with a clear conversation and ends with details that hold up.</p>
           <Link className="text-link" href="/about">Meet RidgePoint</Link>
         </div>
       </section>
@@ -58,6 +58,19 @@ export default function HomePage() {
           <div>
             <p>The finished site will feature RidgePoint project photography, scope notes, and practical results. This concept image is temporary and will be replaced before launch.</p>
             <Link className="button button-dark" href="/projects">See the project gallery</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-soft">
+        <div className="shell faq-grid">
+          <div>
+            <p className="eyebrow">Helpful answers</p>
+            <h2>Start with the questions that matter.</h2>
+            <p className="section-copy">A clear conversation is the best first step for any home improvement project.</p>
+          </div>
+          <div>
+            {faqs.map((faq) => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}
           </div>
         </div>
       </section>

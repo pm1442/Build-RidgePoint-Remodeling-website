@@ -21,6 +21,7 @@ export function SiteFooter() {
           <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
           <a href={`mailto:${site.email}`}>{site.email}</a>
           <p>{site.address}</p>
+          <p>{site.hours}</p>
         </div>
       </div>
       <div className="shell footer-bottom">© {new Date().getFullYear()} RidgePoint Remodeling & Carpentry</div>

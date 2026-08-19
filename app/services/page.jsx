@@ -10,7 +10,7 @@ export default function ServicesPage() {
       <section className="page-hero shell">
         <p className="eyebrow">Services</p>
         <h1>Made for the rooms and moments that matter.</h1>
-        <p>Explore RidgePoint remodeling, carpentry, and deck-building services for North Central Florida homeowners.</p>
+        <p>Explore RidgePoint home improvement, cabinet sales and installation, finish carpentry, and deck-building services for North Central Florida homeowners.</p>
       </section>
       <section className="section shell service-list">
         {services.map((service) => (
