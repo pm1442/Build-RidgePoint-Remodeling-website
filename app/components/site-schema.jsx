@@ -12,6 +12,7 @@ export function SiteSchema() {
         url: site.url,
         telephone: site.phone,
         email: site.email,
+        founder: { "@id": `${site.url}/#jason-miller` },
         address: {
           "@type": "PostalAddress",
           streetAddress: "8831 SW 88th Ct",
@@ -34,6 +35,13 @@ export function SiteSchema() {
         url: site.url,
         name: site.name,
         publisher: { "@id": `${site.url}/#business` },
+      },
+      {
+        "@type": "Person",
+        "@id": `${site.url}/#jason-miller`,
+        name: site.ownerName,
+        jobTitle: "Owner",
+        worksFor: { "@id": `${site.url}/#business` },
       },
     ],
   };

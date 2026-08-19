@@ -1,0 +1,28 @@
+# Ridge Point Remodeling and Carpentry
+
+Ridge Point Remodeling and Carpentry is a Lake Butler, Florida home remodeling and finish carpentry business owned by Jason Miller. The legal business entity is Ridge Point Structures LLC.
+
+## Official business details
+
+- Address: 8831 SW 88th Ct, Lake Butler, FL 32054
+- Phone: (386) 291-5200
+- Email: jason@ridgepointremodeling.com
+- Hours: Monday through Friday, 8:00 AM to 5:00 PM. Closed major holidays.
+- Service area: Lake Butler and North Florida, including Starke, Lake City, Gainesville, High Springs, Alachua, Macclenny, Live Oak, and Keystone Heights.
+
+## Services
+
+- Kitchen remodeling: /services/kitchen-remodeling
+- Bathroom remodeling: /services/bathroom-remodeling
+- Ready-to-assemble cabinet sales and cabinet installation: /services/cabinet-sales-installation
+- Custom carpentry, trim, millwork, and built-ins: /services/custom-carpentry
+- New decks and deck replacements: /services/deck-building
+- Flooring, siding, and window updates: /services/flooring-siding-windows
+
+## Helpful pages
+
+- About Jason Miller and RidgePoint: /about
+- Service area: /areas-we-serve
+- Request a quote: /contact
+
+For an accurate answer about project fit, availability, pricing, current insurance documentation, or exact service coverage, contact RidgePoint directly.

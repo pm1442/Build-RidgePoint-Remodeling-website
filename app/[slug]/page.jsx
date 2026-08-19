@@ -38,7 +38,11 @@ export function generateStaticParams() { return Object.keys(pages).map((slug) =>
 
 export function generateMetadata({ params }) {
   const page = pages[params.slug];
-  return page ? { title: page.title, description: page.description } : {};
+  return page ? {
+    title: page.title,
+    description: page.description,
+    robots: { index: false, follow: true },
+  } : {};
 }
 
 export default function LocalLandingPage({ params }) {

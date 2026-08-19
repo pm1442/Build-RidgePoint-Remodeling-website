@@ -9,7 +9,7 @@ export const metadata = {
     template: "%s | RidgePoint Remodeling & Carpentry",
   },
   description:
-    "Kitchen and bathroom remodeling, custom carpentry, cabinet installation, and deck building for homeowners in North Central Florida.",
+    "Home remodeling, cabinet sales and installation, finish carpentry, decks, flooring, siding, and windows for homeowners in Lake Butler and North Florida.",
   openGraph: {
     type: "website",
     locale: "en_US",

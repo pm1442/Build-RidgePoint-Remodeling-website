@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageFrame } from "./components/page-frame";
 import { SiteSchema } from "./components/site-schema";
-import { faqs, services, site } from "./lib/site-data";
+import { faqs, processSteps, services, site } from "./lib/site-data";
 
 const serviceImages = ["/images/placement-kitchen.webp", "/images/placement-bathroom.webp", "/images/placement-cabinetry.webp", "/images/placement-cabinetry.webp", "/images/placement-deck.webp", "/images/deck-concept-placeholder.webp"];
 
@@ -14,9 +14,9 @@ export default function HomePage() {
         <Image className="hero-image" src="/images/deck-concept-placeholder.webp" fill priority sizes="100vw" alt="Concept placeholder for a RidgePoint deck project" />
         <div className="hero-scrim" />
         <div className="shell hero-content">
-          <p className="eyebrow">Lake Butler, Florida</p>
-          <h1>Craftsmanship that feels at home.</h1>
-          <p className="hero-copy">Home improvement, finish carpentry, cabinet sales and installation, and outdoor decks built for the way you live.</p>
+          <p className="eyebrow">Lake Butler and North Florida</p>
+          <h1>Home remodeling and carpentry built around your life.</h1>
+          <p className="hero-copy">From kitchens and bathrooms to cabinets, trim, and decks, Jason helps you turn a frustrating to-do list into a home that works better.</p>
           <div className="hero-actions">
             <Link className="button" href="/contact">Request a Quote</Link>
             <a className="button button-quiet" href={`tel:${site.phone}`}>Call {site.phoneDisplay}</a>
@@ -26,12 +26,20 @@ export default function HomePage() {
 
       <section className="section shell intro-grid">
         <div>
-          <p className="eyebrow">Built around the details</p>
-          <h2>A straightforward partner for projects that matter.</h2>
+          <p className="eyebrow">You do not have to solve it alone</p>
+          <h2>Start with what is not working in your home.</h2>
         </div>
         <div className="intro-copy">
-          <p>RidgePoint brings hands-on home improvement and finish carpentry together under one roof. From a kitchen update to a new outdoor deck, the work starts with a clear conversation and ends with details that hold up.</p>
-          <Link className="text-link" href="/about">Meet RidgePoint</Link>
+          <p>Whether you are planning a kitchen renovation, looking for cabinets, or thinking about a deck, you do not need to know every construction detail. Jason listens to what you want to improve, helps you understand the options, and gives you a practical next step.</p>
+          <Link className="text-link" href="/about">Meet Jason and RidgePoint</Link>
+        </div>
+      </section>
+
+      <section className="section section-soft">
+        <div className="shell">
+          <p className="eyebrow">A simple way forward</p>
+          <h2>From a project idea to a clear next step.</h2>
+          <div className="process-grid">{processSteps.map((step) => <article key={step.title}><h3>{step.title}</h3><p>{step.text}</p></article>)}</div>
         </div>
       </section>
 
@@ -54,12 +62,12 @@ export default function HomePage() {
       <section className="section project-callout">
         <div className="shell project-callout-grid">
           <div>
-            <p className="eyebrow">Work, not stock claims</p>
-            <h2>Every good project has a story worth showing.</h2>
+            <p className="eyebrow">See what feels possible</p>
+            <h2>Every good project starts with a clear idea of what better looks like.</h2>
           </div>
           <div>
-            <p>The finished site will feature RidgePoint project photography, scope notes, and practical results. This concept image is temporary and will be replaced before launch.</p>
-            <Link className="button button-dark" href="/projects">See the project gallery</Link>
+            <p>Explore kitchen, bath, cabinetry, finish-work, and outdoor inspiration. The gallery currently uses clearly marked placement images while RidgePoint gathers approved photos of completed work.</p>
+            <Link className="button button-dark" href="/projects">Explore project ideas</Link>
           </div>
         </div>
       </section>
@@ -79,16 +87,16 @@ export default function HomePage() {
 
       <section className="section shell local-section">
         <p className="eyebrow">North Central Florida</p>
-        <h2>Local work deserves local understanding.</h2>
-        <p>RidgePoint serves homeowners in and around Lake Butler, including {site.cities.slice(1, 5).join(", ")}, and surrounding communities.</p>
+        <h2>Local help for the home you already have.</h2>
+        <p>RidgePoint serves homeowners in and around Lake Butler, including {site.cities.slice(1, 5).join(", ")}, and surrounding North Florida communities.</p>
         <Link className="text-link" href="/areas-we-serve">Explore the service area</Link>
       </section>
 
       <section className="quote-band">
         <div className="shell quote-band-inner">
           <div>
-            <p className="eyebrow">Start the conversation</p>
-            <h2>Tell us what you are planning.</h2>
+            <p className="eyebrow">Take the next step</p>
+            <h2>Tell Jason what you want to improve.</h2>
           </div>
           <Link className="button button-light" href="/contact">Request a Quote</Link>
         </div>
