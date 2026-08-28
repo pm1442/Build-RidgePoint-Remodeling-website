@@ -7,11 +7,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="shell header-inner">
         <Link className="brand" href="/" aria-label="RidgePoint home">
-          <span className="brand-mark" aria-hidden="true"><Image src="/images/ridgepoint-mark.webp" alt="" width={38} height={42} /></span>
-          <span>
-            <strong>RidgePoint</strong>
-            <small>Remodeling & Carpentry</small>
-          </span>
+          <Image src="/images/ridgepoint-remodeling-logo.png" alt="RidgePoint Remodeling" width={1779} height={523} sizes="(max-width: 720px) 150px, 190px" priority />
         </Link>
         <nav aria-label="Primary navigation" className="site-nav">
           <Link href="/services">Services</Link>
