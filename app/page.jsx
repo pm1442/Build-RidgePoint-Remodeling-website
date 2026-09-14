@@ -15,23 +15,39 @@ export default function HomePage() {
         <div className="hero-scrim" />
         <div className="shell hero-content">
           <p className="eyebrow">Lake Butler and North Florida</p>
-          <h1>Home remodeling and carpentry built around your life.</h1>
+          <h1>Home remodeling and carpentry.</h1>
           <p className="hero-copy">From kitchens and bathrooms to cabinets, trim, and decks, Jason helps you turn a frustrating to-do list into a home that works better.</p>
           <div className="hero-actions">
-            <Link className="button" href="/contact">Request a Quote</Link>
+            <Link className="button" href="/projects">See Our Worth</Link>
             <a className="button button-quiet" href={`tel:${site.phone}`}>Call {site.phoneDisplay}</a>
           </div>
         </div>
       </section>
 
-      <section className="section shell intro-grid">
-        <div>
-          <p className="eyebrow">You do not have to solve it alone</p>
-          <h2>Start with what is not working in your home.</h2>
-        </div>
-        <div className="intro-copy">
-          <p>Whether you are planning a kitchen renovation, looking for cabinets, or thinking about a deck, you do not need to know every construction detail. Jason listens to what you want to improve, helps you understand the options, and gives you a practical next step.</p>
-          <Link className="text-link" href="/about">Meet Jason and RidgePoint</Link>
+      <section className="section popular-services">
+        <div className="shell">
+          <div className="section-heading">
+            <p className="eyebrow">Popular services</p>
+            <h2>Start with the part of your home that needs attention.</h2>
+          </div>
+          <div className="popular-service-grid">
+            <Link className="popular-service-card popular-service-card-cabinets" href="/services/cabinet-sales-installation">
+              <Image src="/images/placement-cabinetry.webp" fill sizes="(max-width: 820px) 100vw, 42vw" alt="Cabinetry in a finished home interior" />
+              <span className="popular-service-scrim" />
+              <span className="popular-service-content"><span className="popular-service-kicker">Cabinets your way</span><strong>Cabinet Sales and Installation</strong><span>Ready-to-assemble cabinets for DIY projects or professional installation.</span></span>
+            </Link>
+            <article className="popular-service-card popular-service-card-renovations">
+              <Image src="/images/placement-kitchen.webp" fill sizes="(max-width: 820px) 100vw, 33vw" alt="Finished kitchen ready for a renovation project" />
+              <span className="popular-service-scrim" />
+              <span className="popular-service-content"><span className="popular-service-kicker">Rooms that work better</span><strong>Kitchen and Bath Renovations</strong><span>Thoughtful updates for the rooms that carry the most daily use.</span><span className="popular-service-links"><Link href="/services/kitchen-remodeling">Kitchen renovations</Link><Link href="/services/bathroom-remodeling">Bathroom renovations</Link></span></span>
+            </article>
+            <Link className="popular-service-card popular-service-card-exterior" href="/services/flooring-siding-windows">
+              <Image src="/images/deck-concept-placeholder.webp" fill sizes="(max-width: 820px) 100vw, 25vw" alt="Exterior of a North Florida home" />
+              <span className="popular-service-scrim" />
+              <span className="popular-service-content"><span className="popular-service-kicker">Protect and refresh your home</span><strong>Siding and Window Replacement</strong><span>Practical exterior updates for existing homes.</span></span>
+            </Link>
+          </div>
+          <div className="popular-services-action"><a className="button" href={`tel:${site.phone}`}>Call Now {site.phoneDisplay}</a></div>
         </div>
       </section>
 
@@ -49,18 +65,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section section-soft">
+      <section className="section section-soft process-section">
         <div className="shell">
           <p className="eyebrow">A simple way forward</p>
-          <h2>From a project idea to a clear next step.</h2>
+          <h2>A clear next step starts here.</h2>
           <div className="process-grid">{processSteps.map((step) => <article key={step.title}><h3>{step.title}</h3><p>{step.text}</p></article>)}</div>
+          <div className="process-action"><Link className="button" href="/contact">Request a Free Estimate</Link></div>
         </div>
       </section>
 
       <section className="section shell">
         <div className="section-heading">
           <p className="eyebrow">What we build</p>
-          <h2>Spaces you will use every day.</h2>
+          <h2>Explore all services.</h2>
         </div>
         <div className="service-grid">
           {services.map((service, index) => (
@@ -71,27 +88,15 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
-      </section>
-
-      <section className="section project-callout">
-        <div className="shell project-callout-grid">
-          <div>
-            <p className="eyebrow">A free estimate is the next step</p>
-            <h2>Tell us what you want to improve. We will help you get oriented.</h2>
-          </div>
-          <div>
-            <p>Share the room or project, what is not working, and the result you have in mind. RidgePoint will review the details and be in touch to discuss your project and next steps.</p>
-            <Link className="button button-dark" href="/contact">Request a Free Estimate</Link>
-          </div>
-        </div>
+        <div className="services-action"><Link className="button" href="/contact">Request a Free Estimate</Link></div>
       </section>
 
       <section className="section section-soft">
         <div className="shell faq-grid">
           <div>
             <p className="eyebrow">Helpful answers</p>
-            <h2>Start with the questions that matter.</h2>
-            <p className="section-copy">A clear conversation is the best first step for any home improvement project.</p>
+            <h2>Licensed <span className="heading-dot" aria-hidden="true">·</span> Insured</h2>
+            <p className="section-copy">Florida License #CRC1335692. Clear answers for the questions you should be asking before a project begins.</p>
           </div>
           <div>
             {faqs.map((faq) => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}
@@ -100,10 +105,15 @@ export default function HomePage() {
       </section>
 
       <section className="section shell local-section">
-        <p className="eyebrow">North Central Florida</p>
-        <h2>Local help for the home you already have.</h2>
-        <p>RidgePoint serves homeowners in and around Lake Butler, including {site.cities.slice(1, 5).join(", ")}, and surrounding North Florida communities.</p>
-        <Link className="text-link" href="/areas-we-serve">Explore the service area</Link>
+        <div className="local-section-copy">
+          <p className="eyebrow">North Central Florida</p>
+          <h2>Local help for the home you already have.</h2>
+          <p>RidgePoint serves homeowners in and around Lake Butler, including {site.cities.slice(1, 5).join(", ")}, and surrounding North Florida communities.</p>
+          <Link className="text-link" href="/areas-we-serve">Explore the service area</Link>
+        </div>
+        <div className="service-area-map">
+          <iframe title="Map centered on RidgePoint Remodeling & Carpentry in Lake Butler, Florida" src="https://www.google.com/maps?q=8831%20SW%2088th%20Ct%2C%20Lake%20Butler%2C%20FL%2032054&z=9&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+        </div>
       </section>
 
       <section className="quote-band">
