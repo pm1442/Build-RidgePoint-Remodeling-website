@@ -35,6 +35,20 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="section section-owner">
+        <div className="shell owner-grid">
+          <div className="owner-image">
+            <Image src="/images/jason-miller-ridgepoint-remodeling.png" alt="Jason Miller, owner of RidgePoint Remodeling & Carpentry" fill sizes="(max-width: 820px) 100vw, 42vw" />
+          </div>
+          <div className="owner-copy">
+            <p className="eyebrow">Meet Jason Miller</p>
+            <h2>Clear answers from the person leading the work.</h2>
+            <p>Jason listens first, then helps you understand the practical options for your home. RidgePoint Remodeling & Carpentry is licensed and insured. Florida License #CRC1335692.</p>
+            <Link className="text-link" href="/about">Meet Jason and RidgePoint</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="section section-soft">
         <div className="shell">
           <p className="eyebrow">A simple way forward</p>
@@ -62,12 +76,12 @@ export default function HomePage() {
       <section className="section project-callout">
         <div className="shell project-callout-grid">
           <div>
-            <p className="eyebrow">See what feels possible</p>
-            <h2>Every good project starts with a clear idea of what better looks like.</h2>
+            <p className="eyebrow">A free estimate is the next step</p>
+            <h2>Tell us what you want to improve. We will help you get oriented.</h2>
           </div>
           <div>
-            <p>Explore kitchen, bath, cabinetry, finish-work, and outdoor inspiration. The gallery currently uses clearly marked placement images while RidgePoint gathers approved photos of completed work.</p>
-            <Link className="button button-dark" href="/projects">Explore project ideas</Link>
+            <p>Share the room or project, what is not working, and the result you have in mind. RidgePoint will review the details and be in touch to discuss your project and next steps.</p>
+            <Link className="button button-dark" href="/contact">Request a Free Estimate</Link>
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 export const site = {
-  name: "Ridge Point Remodeling and Carpentry",
-  legalName: "Ridge Point Structures LLC",
+  name: "RidgePoint Remodeling & Carpentry",
+  legalName: "RidgePoint Remodeling & Carpentry LLC",
   shortName: "RidgePoint",
   ownerName: "Jason Miller",
   phoneDisplay: "(386) 291-5200",
@@ -144,13 +144,13 @@ export const faqs = [
     answer: "Yes. RidgePoint offers ready-to-assemble cabinets for homeowners who plan to install them themselves, as well as cabinet purchase and professional installation for homeowners who want one point of contact.",
   },
   {
-    question: "Do you carry insurance?",
-    answer: "Ask about current insurance coverage during your initial conversation. RidgePoint can confirm the applicable coverage and documentation for your specific project before work is scheduled.",
+    question: "Are you licensed and insured?",
+    answer: "Yes. RidgePoint Remodeling & Carpentry is licensed and insured. Florida License #CRC1335692. Ask Jason for any project-specific documentation you need before work is scheduled.",
   },
 ];
 
 export const processSteps = [
   { title: "Tell Jason what is not working", text: "Start with the room, repair, or outdoor space you want to improve. Share your goals, location, and the details you already know." },
-  { title: "Talk through a practical path", text: "RidgePoint helps determine whether the project is a fit, what the scope may involve, and what needs to happen before work begins." },
-  { title: "Move forward with clarity", text: "Once the scope, materials, timing, and next steps are clear, you can decide how you want to proceed." },
+  { title: "Talk through the details", text: "Jason reviews the project with you, discusses the scope and options, and explains the next practical step." },
+  { title: "Get a clear path forward", text: "Once the scope, materials, timing, and next steps are clear, you can decide how you want to proceed." },
 ];

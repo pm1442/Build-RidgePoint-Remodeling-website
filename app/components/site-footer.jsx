@@ -7,7 +7,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="shell footer-grid">
         <div>
-          <Link className="footer-brand" href="/" aria-label="RidgePoint home"><Image src="/images/ridgepoint-remodeling-logo.png" alt="RidgePoint Remodeling" width={1779} height={523} sizes="230px" /></Link>
+          <Link className="footer-brand" href="/" aria-label="RidgePoint home"><Image src="/images/ridgepoint-remodeling-logo.png" alt="RidgePoint Remodeling & Carpentry" width={1779} height={523} sizes="230px" /></Link>
           <p>Remodeling and carpentry for homeowners across North Central Florida.</p>
         </div>
         <div>
