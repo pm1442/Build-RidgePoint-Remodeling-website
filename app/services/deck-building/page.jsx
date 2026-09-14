@@ -1,4 +1,4 @@
 import { PageFrame } from "../../components/page-frame";
 import { ServiceDetailPage } from "../../components/service-detail-page";
 export const metadata = { title: "Deck Builder in Lake Butler, FL", description: "New deck construction and deck replacements with railings, stairs, and covered features for Lake Butler and North Florida homeowners." };
-export default function DeckBuildingPage() { return <PageFrame><ServiceDetailPage slug="deck-building" /></PageFrame>; }
+export default function DeckBuildingPage() { return <PageFrame><ServiceDetailPage slug="deck-building" heroImage={{ src: "/images/deck-concept-placeholder.webp", alt: "Covered wood deck with steps, railings, outdoor seating, and a wooded North Florida view" }} faqHeading="Deck building FAQs" faqIntro="The questions homeowners often ask before planning a new deck or replacing an existing one, with straightforward answers to help you take the next step." faqCtaLabel="Talk through your deck project" centeredScope hideIntro hideBottomCta /></PageFrame>; }
