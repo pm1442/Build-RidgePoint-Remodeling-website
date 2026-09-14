@@ -5,3 +5,7 @@ node_modules/
 .seo-cache/
 work/npm-cache/
 work/
+
+# Local deliverables and one-off workspace helpers
+outputs/
+create_local_search_checklist.py
