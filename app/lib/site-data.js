@@ -65,9 +65,11 @@ export const services = [
     pageIntro: "Bathroom work can range from a focused update to a more complete renovation. RidgePoint helps you talk through the condition of the room, the changes you want to make, and the finish decisions that help the space feel comfortable, functional, and easier to maintain.",
     planningPoints: ["The condition of the existing bathroom", "Storage, lighting, and fixture priorities", "The right scope for the room and your goals"],
     serviceFaqs: [
-      { question: "Does RidgePoint take on smaller bathroom updates?", answer: "RidgePoint discusses both focused bathroom updates and more complete renovations. Share the current condition of the room and the changes you have in mind so Jason can confirm whether the scope is a fit." },
-      { question: "What bathroom details should I prioritize first?", answer: "That depends on how the room is used and what is currently failing you. Storage, lighting, fixtures, finishes, and the condition of existing materials are useful things to bring up in the first conversation." },
-      { question: "Do I need every finish selected before I request a quote?", answer: "No. A clear description of your goals is enough to start. Material and finish choices can be discussed as the scope becomes clearer." },
+      { question: "Can RidgePoint handle a small bathroom update or does it need to be a full remodel?", answer: "RidgePoint discusses both focused bathroom updates and more complete renovations. Share the current condition of the room and the changes you have in mind so Jason can confirm whether the scope is a fit." },
+      { question: "Can I keep my existing bathroom layout and still make a meaningful change?", answer: "Often, yes. Updates to cabinetry, tile, shower or tub areas, fixtures, and lighting can change how the room feels and functions without starting from a blank slate. Jason can talk through what makes sense for your bathroom." },
+      { question: "What bathroom work can RidgePoint handle?", answer: "Bathroom remodel scopes can include vanities and cabinetry, tile and finish work, shower or tub updates, plumbing fixtures, and lighting or electrical updates. The right combination depends on the room and your goals." },
+      { question: "Do I need every finish selected before I request a free estimate?", answer: "No. A clear description of your goals is enough to start. Photos, the parts of the room that are not working, and any ideas you already have will help guide the conversation. Material and finish choices can be discussed as the scope becomes clearer." },
+      { question: "Is RidgePoint licensed and insured?", answer: "Yes. RidgePoint Remodeling & Carpentry LLC is licensed and insured. Florida license number: CRC1335692." },
     ],
   },
   {
