@@ -40,6 +40,14 @@ export const services = [
     eyebrow: "The center of daily life",
     summary: "Practical, hard-working kitchens shaped around how your household actually lives.",
     details: ["Layout updates", "Cabinet installation", "Trim and finish carpentry"],
+    scopeHeading: "What your kitchen remodel might include",
+    scopeDescription: "If your kitchen feels short on storage, difficult to work in, or overdue for a more finished look, a kitchen remodel can focus on the changes that make daily life easier. The right scope starts with how you use the room and what you want to improve first.",
+    scopeItems: [
+      { title: "Cabinet sales and installation", text: "RidgePoint offers ready-to-assemble cabinets for purchase, with professional installation available for homeowners who want help bringing the kitchen together." },
+      { title: "Layout and storage improvements", text: "A more useful layout and better storage can make cooking, cleanup, and everyday routines feel less cramped and more organized." },
+      { title: "Trim and finish carpentry", text: "Careful trim and finish work helps cabinets, walls, openings, and the rest of the room meet cleanly and feel complete." },
+      { title: "The right scope for your home", text: "The current kitchen, your household routines, and the changes that matter most will help shape a practical path forward." },
+    ],
     pageIntro: "A kitchen remodel should solve the everyday problems you notice most: not enough storage, an awkward layout, worn finishes, or a room that no longer fits the way your household lives. RidgePoint helps homeowners plan kitchen improvements around practical use, materials, and the finish details that make the room feel complete.",
     planningPoints: ["What is not working in the current kitchen", "Which changes will make the biggest daily difference", "How cabinetry, trim, and finishes need to work together"],
     serviceFaqs: [
