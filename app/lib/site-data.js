@@ -56,6 +56,12 @@ export const services = [
     details: ["Vanities and cabinetry", "Tile and finish coordination", "Fixture and lighting updates"],
     scopeHeading: "What your bath remodel might include",
     scopeDescription: "If you are tired of a cramped vanity, dim lighting, worn finishes, or a shower that no longer works for you, a bath remodel might be the change you have been thinking about. The right scope starts with how you want the room to feel and function every day.",
+    scopeItems: [
+      { title: "Vanity, cabinetry, and storage", text: "A new vanity or better cabinetry can make a tight bathroom easier to use and give everyday items a place to live." },
+      { title: "Tile, shower, and tub work", text: "Worn tile, a dated shower, or a tub that no longer fits your routine can be part of a focused update or a more complete bathroom remodel." },
+      { title: "Plumbing fixtures and lighting", text: "Updated fixtures and lighting can improve the way the room looks, feels, and functions every day." },
+      { title: "The right scope for your home", text: "The condition of the existing bathroom, the changes you want most, and your priorities for the finished space help shape the plan." },
+    ],
     pageIntro: "Bathroom work can range from a focused update to a more complete renovation. RidgePoint helps you talk through the condition of the room, the changes you want to make, and the finish decisions that help the space feel comfortable, functional, and easier to maintain.",
     planningPoints: ["The condition of the existing bathroom", "Storage, lighting, and fixture priorities", "The right scope for the room and your goals"],
     serviceFaqs: [
