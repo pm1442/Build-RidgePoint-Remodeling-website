@@ -54,6 +54,8 @@ export const services = [
     eyebrow: "Comfort that holds up",
     summary: "Thoughtful bathroom renovations, from focused updates to full room transformations.",
     details: ["Vanities and cabinetry", "Tile and finish coordination", "Fixture and lighting updates"],
+    scopeHeading: "What your bath remodel might include",
+    scopeDescription: "If you are tired of a cramped vanity, dim lighting, worn finishes, or a shower that no longer works for you, a bath remodel might be the change you have been thinking about. The right scope starts with how you want the room to feel and function every day.",
     pageIntro: "Bathroom work can range from a focused update to a more complete renovation. RidgePoint helps you talk through the condition of the room, the changes you want to make, and the finish decisions that help the space feel comfortable, functional, and easier to maintain.",
     planningPoints: ["The condition of the existing bathroom", "Storage, lighting, and fixture priorities", "The right scope for the room and your goals"],
     serviceFaqs: [
