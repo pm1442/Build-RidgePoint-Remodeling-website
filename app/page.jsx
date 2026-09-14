@@ -67,8 +67,7 @@ export default function HomePage() {
 
       <section className="section section-soft process-section">
         <div className="shell">
-          <p className="eyebrow">A simple way forward</p>
-          <h2>A clear next step starts here.</h2>
+          <h2>A simple way forward.</h2>
           <div className="process-grid">{processSteps.map((step) => <article key={step.title}><h3>{step.title}</h3><p>{step.text}</p></article>)}</div>
           <div className="process-action"><Link className="button" href="/contact">Request a Free Estimate</Link></div>
         </div>
