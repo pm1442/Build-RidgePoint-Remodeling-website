@@ -20,7 +20,6 @@ export function SiteFooter() {
         <div>
           <p className="footer-label">Contact</p>
           <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
-          <a href={`mailto:${site.email}`}>{site.email}</a>
           <p>{site.address}</p>
           <p>{site.hours}</p>
         </div>

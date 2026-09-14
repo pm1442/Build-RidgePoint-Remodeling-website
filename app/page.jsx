@@ -115,15 +115,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="quote-band">
-        <div className="shell quote-band-inner">
-          <div>
-            <p className="eyebrow">Take the next step</p>
-            <h2>Tell Jason what you want to improve.</h2>
-          </div>
-          <Link className="button button-light" href="/contact">Request a Quote</Link>
-        </div>
-      </section>
     </PageFrame>
   );
 }
