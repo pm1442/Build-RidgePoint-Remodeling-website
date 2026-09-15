@@ -11,12 +11,12 @@ export default function HomePage() {
     <PageFrame>
       <SiteSchema />
       <section className="hero">
-        <Image className="hero-image" src="/images/deck-concept-placeholder.webp" fill priority sizes="100vw" alt="Concept placeholder for a RidgePoint deck project" />
+        <Image className="hero-image" src="/images/ridgepoint-home-hero.png" fill priority sizes="100vw" alt="Covered wood porch with steps, railings, and outdoor seating beside a North Florida home and oak trees" />
         <div className="hero-scrim" />
         <div className="shell hero-content">
           <p className="eyebrow">Lake Butler and North Florida</p>
           <h1>Home remodeling and carpentry.</h1>
-          <p className="hero-copy">From kitchens and bathrooms to cabinets, trim, and decks, Jason helps you turn a frustrating to-do list into a home that works better.</p>
+          <p className="hero-copy">Whether your kitchen feels outdated, your bathroom no longer works for you, or repairs keep adding up, RidgePoint provides kitchen and bath renovations, cabinet sales and installation, siding, windows, and carpentry across North Florida.</p>
           <div className="hero-actions">
             <Link className="button" href="/projects">See Our Worth</Link>
             <a className="button button-quiet" href={`tel:${site.phone}`}>Call {site.phoneDisplay}</a>
