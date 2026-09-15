@@ -60,7 +60,7 @@ export default function HomePage() {
             <p className="eyebrow">Meet Jason Miller</p>
             <h2>Clear answers from the person leading the work.</h2>
             <p>Jason listens first, then helps you understand the practical options for your home. RidgePoint Remodeling & Carpentry is licensed and insured. Florida License #CRC1335692.</p>
-            <Link className="text-link" href="/about">Meet Jason and RidgePoint</Link>
+            <Link className="text-link" href="/about">About Us</Link>
           </div>
         </div>
       </section>
