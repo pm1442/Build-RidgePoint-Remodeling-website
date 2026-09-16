@@ -93,9 +93,9 @@ export default function HomePage() {
       <section className="section section-soft">
         <div className="shell faq-grid">
           <div>
-            <p className="eyebrow">Helpful answers</p>
-            <h2>Licensed <span className="heading-dot" aria-hidden="true">·</span> Insured</h2>
-            <p className="section-copy">Florida License #CRC1335692. Clear answers for the questions you should be asking before a project begins.</p>
+            <p className="eyebrow">Working with RidgePoint</p>
+            <h2>Clear answers before work begins.</h2>
+            <p className="section-copy">Licensed and insured. Florida License #CRC1335692. Practical guidance for homeowners who want to know what comes next.</p>
           </div>
           <div>
             {faqs.map((faq) => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}

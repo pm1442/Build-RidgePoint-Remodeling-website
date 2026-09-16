@@ -189,12 +189,12 @@ export const getService = (slug) => services.find((service) => service.slug === 
 
 export const faqs = [
   {
-    question: "Is my home improvement project feasible?",
-    answer: "Start with a conversation about your goals, the existing space, and the result you want. RidgePoint can help assess whether the project is a practical fit and what it may involve before work begins.",
+    question: "Why should I choose RidgePoint Remodeling & Carpentry?",
+    answer: "RidgePoint starts with a clear conversation before work begins. Jason listens to what is not working, reviews the details that matter, and helps you understand whether the project is a fit and what the next step may involve. RidgePoint is licensed and insured in Florida, License #CRC1335692.",
   },
   {
-    question: "Is this a project RidgePoint can take on?",
-    answer: "RidgePoint focuses on home repair and improvement work including kitchen and bath renovations, cabinet sales and installation, finish carpentry, flooring, siding, windows, and porch and deck additions. Share the scope to confirm fit.",
+    question: "I have had poor communication with a contractor before. What can I expect from RidgePoint?",
+    answer: "You should not have to guess what comes next. Before work starts, RidgePoint discusses the existing space, scope, options, materials, timing, and next practical step. The goal is a clearer conversation from the beginning, not a vague promise after the work is already underway.",
   },
   {
     question: "How soon can you start my project?",
@@ -205,8 +205,16 @@ export const faqs = [
     answer: "Project cost depends on the condition of the home, materials, and the work involved. RidgePoint discusses the scope with you first, then can provide clear next steps for pricing.",
   },
   {
-    question: "Do you sell cabinets without installation?",
-    answer: "Yes. RidgePoint offers ready-to-assemble cabinets for homeowners who plan to install them themselves, as well as cabinet purchase and professional installation for homeowners who want one point of contact.",
+    question: "How do I know if my project is a fit for RidgePoint?",
+    answer: "RidgePoint focuses on kitchen and bath renovations, cabinet sales and installation, finish carpentry, flooring, siding, windows, and porch and deck additions. Share the room, repair, or outdoor space you want to improve so Jason can review the scope with you.",
+  },
+  {
+    question: "Do I need every material and detail selected before I ask for an estimate?",
+    answer: "No. You can start with the problem you want to solve, photos of the area, your location, and the result you have in mind. The right materials and details are part of the conversation, not something you need to have figured out alone.",
+  },
+  {
+    question: "What if my project needs work outside RidgePoint's normal scope?",
+    answer: "RidgePoint will discuss the scope honestly before work begins. If a project includes work outside the services RidgePoint normally handles, Jason can tell you that early so you have a clearer picture of what the project involves.",
   },
   {
     question: "Are you licensed and insured?",
