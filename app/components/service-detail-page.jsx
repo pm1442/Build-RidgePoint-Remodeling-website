@@ -4,9 +4,9 @@ import { faqs, getService, site } from "../lib/site-data";
 
 const projectGalleryLinks = {
   "kitchen-remodeling": { href: "/projects#kitchens-and-cabinetry", label: "View kitchen ideas" },
-  "bathroom-remodeling": { href: "/projects#bathroom-remodeling", label: "View bathroom ideas" },
+  "bathroom-remodeling": { href: "/projects#bathrooms-and-finish-work", label: "View bathroom ideas" },
   "cabinet-sales-installation": { href: "/projects#kitchens-and-cabinetry", label: "View cabinet ideas" },
-  "custom-carpentry": { href: "/projects#custom-carpentry", label: "View carpentry ideas" },
+  "custom-carpentry": { href: "/projects#bathrooms-and-finish-work", label: "View carpentry ideas" },
   "deck-building": { href: "/projects#decks-and-outdoor-living", label: "View deck ideas" },
   "flooring-siding-windows": { href: "/projects#exterior-and-home-updates", label: "View exterior ideas" },
 };
