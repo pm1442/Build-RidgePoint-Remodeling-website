@@ -13,9 +13,13 @@ export default function ProjectsPage() {
 
   return (
     <PageFrame>
-      <section className="page-hero shell">
-        <p className="eyebrow">Project Gallery</p>
-        <h1>Ideas. Discover. Create.</h1>
+      <section className="shell project-gallery-hero">
+        <div>
+          <p className="eyebrow">Project Gallery</p>
+          <h1>Find the starting point for your next project.</h1>
+          <p>Browse kitchen, bathroom, cabinetry, carpentry, and outdoor ideas as you consider what could work in your home.</p>
+        </div>
+        <p className="project-gallery-words" aria-label="Ideas. Discover. Create."><span>Ideas.</span><span>Discover.</span><span>Create.</span></p>
       </section>
       <section className="section shell project-gallery">
         {galleries.map((gallery) => <section className="project-gallery-section" key={gallery.title}><div><p className="eyebrow">Placement gallery</p><h2>{gallery.title}</h2><p>{gallery.copy}</p></div><div className="project-image-pair">{gallery.images.map(([src, alt]) => <figure key={src + alt}><Image src={src} alt={alt} fill sizes="(max-width: 820px) 100vw, 50vw" /><figcaption>Visual placement image</figcaption></figure>)}</div></section>)}
