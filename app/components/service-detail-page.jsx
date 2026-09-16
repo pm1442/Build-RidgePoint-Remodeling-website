@@ -7,8 +7,8 @@ const projectGalleryLinks = {
   "bathroom-remodeling": { href: "/projects#bathrooms-and-finish-work", label: "View bathroom ideas" },
   "cabinet-sales-installation": { href: "/projects#kitchens-and-cabinetry", label: "View cabinet ideas" },
   "custom-carpentry": { href: "/projects#bathrooms-and-finish-work", label: "View carpentry ideas" },
-  "deck-building": { href: "/projects#decks-and-outdoor-living", label: "View deck ideas" },
-  "flooring-siding-windows": { href: "/projects#exterior-and-home-updates", label: "View exterior ideas" },
+  "deck-building": { href: "/projects#outdoor-and-exterior-updates", label: "View deck ideas" },
+  "flooring-siding-windows": { href: "/projects#outdoor-and-exterior-updates", label: "View exterior ideas" },
 };
 
 export function ServiceDetailPage({ slug, showcase, heroImage, faqHeading, faqIntro, faqCtaLabel, centeredScope = false, hideIntro = false, hideBottomCta = false }) {
