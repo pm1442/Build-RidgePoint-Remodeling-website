@@ -19,14 +19,14 @@ export default function ServicesPage() {
     <PageFrame>
       <section className="page-hero shell">
         <p className="eyebrow">Services</p>
-        <h1>Home remodeling and carpentry services for North Florida.</h1>
-        <p>Explore practical kitchen and bathroom remodeling, cabinet sales and installation, custom carpentry, deck building, flooring, siding, and window updates for homeowners in and around Lake Butler.</p>
+        <h1>Remodeling and carpentry for your home.</h1>
+        <p>Kitchens, bathrooms, cabinetry, finish carpentry, decks, flooring, siding, and windows. RidgePoint serves Lake Butler and nearby North Florida communities.</p>
       </section>
       <section className="section shell services-directory" aria-labelledby="services-directory-heading">
         <div className="services-directory-intro">
           <p className="eyebrow">Explore the work</p>
-          <h2 id="services-directory-heading">Start with the part of your home that needs attention.</h2>
-          <p>Each service page explains the work RidgePoint can discuss, common homeowner questions, and a straightforward way to begin.</p>
+          <h2 id="services-directory-heading">What needs attention?</h2>
+          <p>Start with the room, repair, or outdoor space you want to improve. Each service page outlines the work RidgePoint can discuss and answers common questions before you reach out.</p>
         </div>
         <div className="services-directory-grid">
           {services.map((service, index) => {
