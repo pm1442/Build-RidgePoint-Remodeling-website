@@ -14,9 +14,8 @@ export default function ProjectsPage() {
   return (
     <PageFrame>
       <section className="page-hero shell">
-        <p className="eyebrow">Project gallery</p>
-        <h1>Ideas for the spaces you want to improve.</h1>
-        <p>This gallery uses visual placement images while RidgePoint collects approved photography of its own completed work. They illustrate service types and are not represented as RidgePoint projects.</p>
+        <p className="eyebrow">Project Gallery</p>
+        <h1>Ideas. Discover. Create.</h1>
       </section>
       <section className="section shell project-gallery">
         {galleries.map((gallery) => <section className="project-gallery-section" key={gallery.title}><div><p className="eyebrow">Placement gallery</p><h2>{gallery.title}</h2><p>{gallery.copy}</p></div><div className="project-image-pair">{gallery.images.map(([src, alt]) => <figure key={src + alt}><Image src={src} alt={alt} fill sizes="(max-width: 820px) 100vw, 50vw" /><figcaption>Visual placement image</figcaption></figure>)}</div></section>)}
