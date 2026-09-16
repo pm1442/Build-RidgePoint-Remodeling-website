@@ -17,8 +17,8 @@ export default function HomePage() {
         <div className="hero-scrim" />
         <div className="shell hero-content">
           <p className="eyebrow">Lake Butler, Florida</p>
-          <h1>Lake Butler Remodeling Contractor for Kitchens, Baths &amp; Custom Carpentry</h1>
-          <p className="hero-copy">Get a practical plan for the parts of your home that no longer work, from kitchens and baths to cabinetry, decks, siding, windows, and finish carpentry. Based in Lake Butler and serving nearby North Florida communities within about an hour&apos;s drive.</p>
+          <h1><span className="hero-title-desktop">Lake Butler Remodeling Contractor for Kitchens, Baths &amp; Custom Carpentry</span><span className="hero-title-mobile">Make your home work better.</span></h1>
+          <p className="hero-copy"><span className="hero-copy-desktop">Get a practical plan for the parts of your home that no longer work, from kitchens and baths to cabinetry, decks, siding, windows, and finish carpentry. Based in Lake Butler and serving nearby North Florida communities within about an hour&apos;s drive.</span><span className="hero-copy-mobile">Kitchens, baths, cabinetry, decks, siding, windows, and finish carpentry in Lake Butler.</span></p>
           <div className="hero-actions">
             <Link className="button" href="/projects#projects-top">View Our Projects</Link>
             <a className="button button-quiet" href={`tel:${site.phone}`}>Call {site.phoneDisplay}</a>
