@@ -2,7 +2,7 @@ import { PageFrame } from "../components/page-frame";
 import Link from "next/link";
 import { ProjectGalleryRail } from "../components/project-gallery-rail";
 
-export const metadata = { title: "Project Gallery" };
+export const metadata = { title: "Project Gallery", description: "Browse kitchen, bathroom, custom carpentry, deck, siding, and window project ideas from RidgePoint Remodeling & Carpentry in Lake Butler, Florida.", alternates: { canonical: "/projects" } };
 
 export default function ProjectsPage() {
   const galleries = [
@@ -22,7 +22,7 @@ export default function ProjectsPage() {
         <p className="project-gallery-words" aria-label="Ideas. Discover. Create."><span>Ideas.</span><span>Discover.</span><span>Create.</span></p>
       </section>
       <section className="section shell project-gallery">
-        {galleries.map((gallery) => <section className="project-gallery-section" id={gallery.id} key={gallery.title}><div><p className="eyebrow">Placement gallery</p><h2>{gallery.title}</h2><p>{gallery.copy}</p></div>{["kitchens-and-cabinetry", "bathrooms-and-finish-work", "outdoor-and-exterior-updates"].includes(gallery.id) ? <ProjectGalleryRail galleryName={gallery.title} images={gallery.images} /> : <div className={`project-image-pair${gallery.images.length === 1 ? " project-image-single" : ""}`}>{gallery.images.map(([src, alt]) => <figure key={src + alt}><Image src={src} alt={alt} fill sizes="(max-width: 820px) 100vw, 50vw" /><figcaption>Visual placement image</figcaption></figure>)}</div>}</section>)}
+        {galleries.map((gallery) => <section className="project-gallery-section" id={gallery.id} key={gallery.title}><div><p className="eyebrow">Project ideas</p><h2>{gallery.title}</h2><p>{gallery.copy}</p></div>{["kitchens-and-cabinetry", "bathrooms-and-finish-work", "outdoor-and-exterior-updates"].includes(gallery.id) ? <ProjectGalleryRail galleryName={gallery.title} images={gallery.images} /> : <div className={`project-image-pair${gallery.images.length === 1 ? " project-image-single" : ""}`}>{gallery.images.map(([src, alt]) => <figure key={src + alt}><Image src={src} alt={alt} fill sizes="(max-width: 820px) 100vw, 50vw" /><figcaption>Project idea</figcaption></figure>)}</div>}</section>)}
       </section>
       <section className="quote-band"><div className="shell quote-band-inner"><h2>Have a project in mind?</h2><Link className="button button-light" href="/contact">Request a Quote</Link></div></section>
     </PageFrame>

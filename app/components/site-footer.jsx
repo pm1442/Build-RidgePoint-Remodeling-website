@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="shell footer-grid">
         <div>
           <Link className="footer-brand" href="/" aria-label="RidgePoint home"><Image src="/images/ridgepoint-remodeling-logo.png" alt="RidgePoint Remodeling & Carpentry" width={1779} height={523} sizes="230px" /></Link>
-          <p>Remodeling and carpentry for homeowners across North Central Florida.</p>
+          <p>Based in Lake Butler, serving nearby North Florida communities within roughly a 60-minute drive.</p>
         </div>
         <div>
           <p className="footer-label">Explore</p>

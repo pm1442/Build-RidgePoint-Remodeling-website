@@ -9,12 +9,14 @@ export const metadata = {
     template: "%s | RidgePoint Remodeling & Carpentry",
   },
   description:
-    "Home remodeling, cabinet sales and installation, finish carpentry, decks, flooring, siding, and windows for homeowners in Lake Butler and North Florida.",
+    "Kitchen, bath, cabinetry, carpentry, deck, siding, window, and flooring work for homeowners in Lake Butler and nearby North Florida communities.",
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "RidgePoint Remodeling & Carpentry",
+    images: [{ url: "/images/ridgepoint-home-hero.png", alt: "RidgePoint Remodeling & Carpentry project" }],
   },
+  twitter: { card: "summary_large_image", images: ["/images/ridgepoint-home-hero.png"] },
 };
 
 export const viewport = {

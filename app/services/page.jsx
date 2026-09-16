@@ -3,7 +3,7 @@ import { services } from "../lib/site-data";
 import Image from "next/image";
 import Link from "next/link";
 
-export const metadata = { title: "Remodeling and Carpentry Services" };
+export const metadata = { title: "Remodeling and Carpentry Services", description: "Kitchen, bathroom, cabinetry, custom carpentry, deck, siding, window, and flooring services for homeowners in Lake Butler and nearby North Florida communities.", alternates: { canonical: "/services" } };
 
 const serviceImages = {
   "kitchen-remodeling": { src: "/images/kitchen-remodel-before-after.png", alt: "Before and after kitchen remodel with white cabinets and a marble-look island" },
@@ -20,7 +20,7 @@ export default function ServicesPage() {
       <section className="section shell services-directory" aria-labelledby="services-directory-heading">
         <div className="services-directory-intro">
           <p className="eyebrow">Explore the work</p>
-          <h2 id="services-directory-heading">What needs attention?</h2>
+          <h1 id="services-directory-heading">What needs attention?</h1>
           <p>Start with the room, repair, or outdoor space you want to improve. Each service page outlines the work RidgePoint can discuss and answers common questions before you reach out.</p>
         </div>
         <div className="services-directory-grid">

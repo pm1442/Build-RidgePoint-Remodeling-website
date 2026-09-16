@@ -6,6 +6,8 @@ import { faqs, processSteps, services, site } from "./lib/site-data";
 
 const serviceImages = ["/images/placement-kitchen.webp", "/images/placement-bathroom.webp", "/images/placement-cabinetry.webp", "/images/placement-cabinetry.webp", "/images/placement-deck.webp", "/images/deck-concept-placeholder.webp"];
 
+export const metadata = { alternates: { canonical: "/" } };
+
 export default function HomePage() {
   return (
     <PageFrame>
@@ -14,11 +16,11 @@ export default function HomePage() {
         <Image className="hero-image" src="/images/ridgepoint-home-hero.png" fill priority sizes="100vw" alt="Covered wood porch with steps, railings, and outdoor seating beside a North Florida home and oak trees" />
         <div className="hero-scrim" />
         <div className="shell hero-content">
-          <p className="eyebrow">Lake Butler and North Florida</p>
-          <h1>Home remodeling and carpentry.</h1>
-          <p className="hero-copy">Whether your kitchen feels outdated, your bathroom no longer works for you, or repairs keep adding up, RidgePoint provides kitchen and bath renovations, cabinet sales and installation, siding, windows, and carpentry across North Florida.</p>
+          <p className="eyebrow">Lake Butler, Florida</p>
+          <h1>Lake Butler Remodeling Contractor for Kitchens, Baths &amp; Custom Carpentry</h1>
+          <p className="hero-copy">Get a practical plan for the parts of your home that no longer work, from kitchens and baths to cabinetry, decks, siding, windows, and finish carpentry. Based in Lake Butler and serving nearby North Florida communities within about an hour&apos;s drive.</p>
           <div className="hero-actions">
-            <Link className="button" href="/projects">See Our Worth</Link>
+            <Link className="button" href="/projects">View Our Projects</Link>
             <a className="button button-quiet" href={`tel:${site.phone}`}>Call {site.phoneDisplay}</a>
           </div>
         </div>
@@ -107,7 +109,7 @@ export default function HomePage() {
         <div className="local-section-copy">
           <p className="eyebrow">North Central Florida</p>
           <h2>Local help for the home you already have.</h2>
-          <p>RidgePoint serves homeowners in and around Lake Butler, including {site.cities.slice(1, 5).join(", ")}, and surrounding North Florida communities.</p>
+          <p>{site.serviceAreaSummary}</p>
           <Link className="text-link" href="/areas-we-serve">Explore the service area</Link>
         </div>
         <div className="service-area-map">
