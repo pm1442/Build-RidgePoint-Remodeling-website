@@ -17,11 +17,6 @@ const serviceImages = {
 export default function ServicesPage() {
   return (
     <PageFrame>
-      <section className="page-hero shell">
-        <p className="eyebrow">Services</p>
-        <h1>Remodeling and carpentry for your home.</h1>
-        <p>Kitchens, bathrooms, cabinetry, finish carpentry, decks, flooring, siding, and windows. RidgePoint serves Lake Butler and nearby North Florida communities.</p>
-      </section>
       <section className="section shell services-directory" aria-labelledby="services-directory-heading">
         <div className="services-directory-intro">
           <p className="eyebrow">Explore the work</p>
