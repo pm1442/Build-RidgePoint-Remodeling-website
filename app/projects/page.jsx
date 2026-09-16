@@ -6,9 +6,10 @@ export const metadata = { title: "Project Gallery" };
 
 export default function ProjectsPage() {
   const galleries = [
-    { title: "Kitchens and cabinetry", copy: "Cabinet layouts, storage, and finish details that support everyday use.", images: [["/images/placement-kitchen.webp", "Kitchen renovation placement image"], ["/images/placement-cabinetry.webp", "Cabinetry and finish carpentry placement image"]] },
-    { title: "Bathrooms and finish work", copy: "Thoughtful room updates paired with the trim and cabinetry details that make a space feel complete.", images: [["/images/placement-bathroom.webp", "Bathroom renovation placement image"], ["/images/placement-cabinetry.webp", "Finish carpentry placement image"]] },
-    { title: "Decks and outdoor living", copy: "Outdoor structures designed around the home, the yard, and the way you want to spend time outside.", images: [["/images/placement-deck.webp", "Outdoor deck placement image"], ["/images/deck-concept-placeholder.webp", "Outdoor deck concept placement image"]] },
+    { id: "kitchens-and-cabinetry", title: "Kitchens and cabinetry", copy: "Cabinet layouts, storage, and finish details that support everyday use.", images: [["/images/placement-kitchen.webp", "Kitchen renovation placement image"], ["/images/placement-cabinetry.webp", "Cabinetry and finish carpentry placement image"]] },
+    { id: "bathrooms-and-finish-work", title: "Bathrooms and finish work", copy: "Thoughtful room updates paired with the trim and cabinetry details that make a space feel complete.", images: [["/images/placement-bathroom.webp", "Bathroom renovation placement image"], ["/images/placement-cabinetry.webp", "Finish carpentry placement image"]] },
+    { id: "decks-and-outdoor-living", title: "Decks and outdoor living", copy: "Outdoor structures designed around the home, the yard, and the way you want to spend time outside.", images: [["/images/placement-deck.webp", "Outdoor deck placement image"], ["/images/deck-concept-placeholder.webp", "Outdoor deck concept placement image"]] },
+    { id: "exterior-and-home-updates", title: "Exterior and home updates", copy: "Ideas for siding, windows, flooring, and the details that help a home feel renewed.", images: [["/images/north-florida-siding-windows.png", "North Florida home with updated siding and windows"]] },
   ];
 
   return (
@@ -22,7 +23,7 @@ export default function ProjectsPage() {
         <p className="project-gallery-words" aria-label="Ideas. Discover. Create."><span>Ideas.</span><span>Discover.</span><span>Create.</span></p>
       </section>
       <section className="section shell project-gallery">
-        {galleries.map((gallery) => <section className="project-gallery-section" key={gallery.title}><div><p className="eyebrow">Placement gallery</p><h2>{gallery.title}</h2><p>{gallery.copy}</p></div><div className="project-image-pair">{gallery.images.map(([src, alt]) => <figure key={src + alt}><Image src={src} alt={alt} fill sizes="(max-width: 820px) 100vw, 50vw" /><figcaption>Visual placement image</figcaption></figure>)}</div></section>)}
+        {galleries.map((gallery) => <section className="project-gallery-section" id={gallery.id} key={gallery.title}><div><p className="eyebrow">Placement gallery</p><h2>{gallery.title}</h2><p>{gallery.copy}</p></div><div className={`project-image-pair${gallery.images.length === 1 ? " project-image-single" : ""}`}>{gallery.images.map(([src, alt]) => <figure key={src + alt}><Image src={src} alt={alt} fill sizes="(max-width: 820px) 100vw, 50vw" /><figcaption>Visual placement image</figcaption></figure>)}</div></section>)}
       </section>
       <section className="quote-band"><div className="shell quote-band-inner"><h2>Have a project in mind?</h2><Link className="button button-light" href="/contact">Request a Quote</Link></div></section>
     </PageFrame>
