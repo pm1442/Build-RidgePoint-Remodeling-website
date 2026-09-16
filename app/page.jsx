@@ -20,7 +20,7 @@ export default function HomePage() {
           <h1>Lake Butler Remodeling Contractor for Kitchens, Baths &amp; Custom Carpentry</h1>
           <p className="hero-copy">Get a practical plan for the parts of your home that no longer work, from kitchens and baths to cabinetry, decks, siding, windows, and finish carpentry. Based in Lake Butler and serving nearby North Florida communities within about an hour&apos;s drive.</p>
           <div className="hero-actions">
-            <Link className="button" href="/projects">View Our Projects</Link>
+            <Link className="button" href="/projects#projects-top">View Our Projects</Link>
             <a className="button button-quiet" href={`tel:${site.phone}`}>Call {site.phoneDisplay}</a>
           </div>
         </div>

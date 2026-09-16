@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { MobileNav } from "./mobile-nav";
 import { site } from "../lib/site-data";
 
 export function SiteHeader() {
@@ -16,16 +17,7 @@ export function SiteHeader() {
           <Link href="/areas-we-serve">Service Area</Link>
           <Link href="/contact">Contact</Link>
         </nav>
-        <details className="mobile-nav">
-          <summary>Menu</summary>
-          <nav aria-label="Mobile navigation">
-            <Link href="/services">Services</Link>
-            <Link href="/projects">Projects</Link>
-            <Link href="/about">About</Link>
-            <Link href="/areas-we-serve">Service Area</Link>
-            <Link href="/contact">Contact</Link>
-          </nav>
-        </details>
+        <MobileNav />
         <a className="button button-small" href={`tel:${site.phone}`}><span className="call-label-full">Call {site.phoneDisplay}</span><span className="call-label-short">Call</span></a>
       </div>
     </header>
