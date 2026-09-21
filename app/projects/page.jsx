@@ -2,7 +2,20 @@ import { PageFrame } from "../components/page-frame";
 import Link from "next/link";
 import { ProjectGalleryRail } from "../components/project-gallery-rail";
 
-export const metadata = { title: "Project Gallery", description: "Browse kitchen, bathroom, custom carpentry, deck, siding, and window project ideas from RidgePoint Remodeling & Carpentry in Lake Butler, Florida.", alternates: { canonical: "/projects" } };
+export const metadata = {
+  title: "Project Gallery",
+  description: "Browse kitchen, bathroom, custom carpentry, deck, siding, and window project ideas from RidgePoint Remodeling & Carpentry in Lake Butler, Florida.",
+  alternates: { canonical: "/projects" },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "RidgePoint Remodeling & Carpentry",
+    title: "RidgePoint Project Gallery",
+    description: "Browse kitchen, bathroom, carpentry, deck, siding, and window project ideas from RidgePoint Remodeling & Carpentry.",
+    images: [{ url: "/images/outdoor-exterior-gallery-03.png", alt: "Covered wood deck with a finished North Florida yard" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/outdoor-exterior-gallery-03.png"] },
+};
 
 export default function ProjectsPage() {
   const galleries = [

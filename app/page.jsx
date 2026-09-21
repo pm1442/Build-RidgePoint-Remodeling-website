@@ -6,7 +6,18 @@ import { faqs, processSteps, services, site } from "./lib/site-data";
 
 const serviceImages = ["/images/placement-kitchen.webp", "/images/placement-bathroom.webp", "/images/placement-cabinetry.webp", "/images/placement-cabinetry.webp", "/images/placement-deck.webp", "/images/deck-concept-placeholder.webp"];
 
-export const metadata = { alternates: { canonical: "/" } };
+export const metadata = {
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "RidgePoint Remodeling & Carpentry",
+    title: "RidgePoint Remodeling & Carpentry | Lake Butler, FL",
+    description: "Kitchen, bath, cabinetry, carpentry, deck, siding, window, and flooring work for homeowners in Lake Butler and nearby North Florida communities.",
+    images: [{ url: "/images/ridgepoint-home-hero.png", alt: "Covered wood porch beside a North Florida home" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/ridgepoint-home-hero.png"] },
+};
 
 export default function HomePage() {
   return (
@@ -36,17 +47,17 @@ export default function HomePage() {
             <Link className="popular-service-card popular-service-card-cabinets" href="/services/cabinet-sales-installation">
               <Image src="/images/placement-cabinetry.webp" fill sizes="(max-width: 820px) 100vw, 42vw" alt="Cabinetry in a finished home interior" />
               <span className="popular-service-scrim" />
-              <span className="popular-service-content"><span className="popular-service-kicker">Cabinets your way</span><strong>Cabinet Sales and Installation</strong><span>Ready-to-assemble cabinets for DIY projects or professional installation.</span></span>
+              <span className="popular-service-content"><strong>Cabinet Sales and Installation</strong><span>Ready-to-assemble cabinets for DIY projects or professional installation.</span></span>
             </Link>
             <article className="popular-service-card popular-service-card-renovations">
               <Image src="/images/placement-kitchen.webp" fill sizes="(max-width: 820px) 100vw, 33vw" alt="Finished kitchen ready for a renovation project" />
               <span className="popular-service-scrim" />
-              <span className="popular-service-content"><span className="popular-service-kicker">Rooms that work better</span><strong>Kitchen and Bath Renovations</strong><span>Thoughtful updates for the rooms that carry the most daily use.</span><span className="popular-service-links"><Link href="/services/kitchen-remodeling">Kitchen renovations</Link><Link href="/services/bathroom-remodeling">Bathroom renovations</Link></span></span>
+              <span className="popular-service-content"><strong>Kitchen and Bath Renovations</strong><span>Thoughtful updates for the rooms that carry the most daily use.</span><span className="popular-service-links"><Link href="/services/kitchen-remodeling">Kitchen renovations</Link><Link href="/services/bathroom-remodeling">Bathroom renovations</Link></span></span>
             </article>
             <Link className="popular-service-card popular-service-card-exterior" href="/services/flooring-siding-windows">
               <Image src="/images/deck-concept-placeholder.webp" fill sizes="(max-width: 820px) 100vw, 25vw" alt="Exterior of a North Florida home" />
               <span className="popular-service-scrim" />
-              <span className="popular-service-content"><span className="popular-service-kicker">Protect and refresh your home</span><strong>Siding and Window Replacement</strong><span>Practical exterior updates for existing homes.</span></span>
+              <span className="popular-service-content"><strong>Siding and Window Replacement</strong><span>Practical exterior updates for existing homes.</span></span>
             </Link>
           </div>
           <div className="popular-services-action"><a className="button" href={`tel:${site.phone}`}>Call Now {site.phoneDisplay}</a></div>
