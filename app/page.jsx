@@ -4,7 +4,7 @@ import { PageFrame } from "./components/page-frame";
 import { SiteSchema } from "./components/site-schema";
 import { faqs, processSteps, services, site } from "./lib/site-data";
 
-const serviceImages = ["/images/placement-kitchen.webp", "/images/placement-bathroom.webp", "/images/placement-cabinetry.webp", "/images/placement-cabinetry.webp", "/images/placement-deck.webp", "/images/deck-concept-placeholder.webp"];
+const serviceImages = ["/images/placement-kitchen.webp", "/images/placement-bathroom.webp", "/images/rpr-cabinet-sales-installation.jpg", "/images/placement-cabinetry.webp", "/images/placement-deck.webp", "/images/deck-concept-placeholder.webp"];
 
 export const metadata = {
   alternates: { canonical: "/" },
@@ -45,7 +45,7 @@ export default function HomePage() {
           </div>
           <div className="popular-service-grid">
             <Link className="popular-service-card popular-service-card-cabinets" href="/services/cabinet-sales-installation">
-              <Image src="/images/placement-cabinetry.webp" fill sizes="(max-width: 820px) 100vw, 42vw" alt="Cabinetry in a finished home interior" />
+              <Image src="/images/rpr-cabinet-sales-installation.jpg" fill sizes="(max-width: 820px) 100vw, 42vw" alt="RidgePoint cabinet installation in a finished white kitchen with black pendant lighting and a central island" />
               <span className="popular-service-scrim" />
               <span className="popular-service-content"><strong>Cabinet Sales and Installation</strong><span>Ready-to-assemble cabinets for DIY projects or professional installation.</span></span>
             </Link>
