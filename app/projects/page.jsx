@@ -1,16 +1,17 @@
 import { PageFrame } from "../components/page-frame";
 import Link from "next/link";
 import { ProjectGalleryRail } from "../components/project-gallery-rail";
+import { ProjectInspirationSScroll } from "../components/project-inspiration-s-scroll";
 
 export const metadata = {
-  title: "Project Gallery",
+  title: "Project Inspiration",
   description: "Browse kitchen, bathroom, custom carpentry, deck, siding, and window project ideas from RidgePoint Remodeling & Carpentry in Lake Butler, Florida.",
   alternates: { canonical: "/projects" },
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "RidgePoint Remodeling & Carpentry",
-    title: "RidgePoint Project Gallery",
+    title: "RidgePoint Project Inspiration",
     description: "Browse kitchen, bathroom, carpentry, deck, siding, and window project ideas from RidgePoint Remodeling & Carpentry.",
     images: [{ url: "/images/outdoor-exterior-gallery-03.png", alt: "Covered wood deck with a finished North Florida yard" }],
   },
@@ -28,14 +29,14 @@ export default function ProjectsPage() {
     <PageFrame>
       <section className="shell project-gallery-hero" id="projects-top">
         <div>
-          <p className="eyebrow">Project Gallery</p>
-          <h1>Find the starting point for your next project.</h1>
+          <p className="eyebrow">Project Inspiration</p>
+          <h1>Ideas for the spaces that matter most.</h1>
           <p>Browse kitchen, bathroom, cabinetry, carpentry, and outdoor ideas as you consider what could work in your home.</p>
         </div>
         <p className="project-gallery-words" aria-label="Ideas. Discover. Create."><span>Ideas.</span><span>Discover.</span><span>Create.</span></p>
       </section>
       <section className="section shell project-gallery">
-        {galleries.map((gallery) => <section className="project-gallery-section" id={gallery.id} key={gallery.title}><div><h2>{gallery.title}</h2><p>{gallery.copy}</p></div>{["kitchens-and-cabinetry", "bathrooms-and-finish-work", "outdoor-and-exterior-updates"].includes(gallery.id) ? <ProjectGalleryRail galleryName={gallery.title} images={gallery.images} /> : <div className={`project-image-pair${gallery.images.length === 1 ? " project-image-single" : ""}`}>{gallery.images.map(([src, alt]) => <figure key={src + alt}><Image src={src} alt={alt} fill sizes="(max-width: 820px) 100vw, 50vw" /><figcaption>Project idea</figcaption></figure>)}</div>}</section>)}
+        {galleries.map((gallery) => <section className={`project-gallery-section${gallery.id === "kitchens-and-cabinetry" ? " project-gallery-section-featured" : ""}`} id={gallery.id} key={gallery.title}><div><h2>{gallery.title}</h2><p>{gallery.copy}</p></div>{gallery.id === "kitchens-and-cabinetry" ? <ProjectInspirationSScroll images={gallery.images} /> : <ProjectGalleryRail galleryName={gallery.title} images={gallery.images} />}</section>)}
       </section>
       <section className="quote-band"><div className="shell quote-band-inner"><h2>Have a project in mind?</h2><Link className="button button-light" href="/contact">Request a Quote</Link></div></section>
     </PageFrame>
