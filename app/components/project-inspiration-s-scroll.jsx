@@ -1,22 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
-import { useEffect, useRef, useState } from "react";
-
-function useCompactViewport() {
-  const [isCompact, setIsCompact] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 720px)");
-    const update = () => setIsCompact(mediaQuery.matches);
-    update();
-    mediaQuery.addEventListener("change", update);
-    return () => mediaQuery.removeEventListener("change", update);
-  }, []);
-
-  return isCompact;
-}
+import { motion, useMotionValue, useReducedMotion, useTransform } from "motion/react";
+import { useEffect, useRef } from "react";
 
 function TrainImage({ image, index, count, scrollYProgress, hasMotion }) {
   const centerPoint = count > 1 ? index / (count - 1) : 0;
@@ -35,41 +21,52 @@ function TrainImage({ image, index, count, scrollYProgress, hasMotion }) {
 }
 
 export function ProjectInspirationSScroll({ images }) {
-  const galleryRef = useRef(null);
   const viewportRef = useRef(null);
-  const trackRef = useRef(null);
   const prefersReducedMotion = useReducedMotion();
-  const isCompact = useCompactViewport();
-  const [travelDistance, setTravelDistance] = useState(0);
-  const hasMotion = !prefersReducedMotion && !isCompact;
-  const { scrollYProgress } = useScroll({ target: galleryRef, offset: ["start start", "end end"] });
-  const x = useTransform(scrollYProgress, [0, 1], [0, -travelDistance]);
+  const scrollXProgress = useMotionValue(0);
+  const hasMotion = !prefersReducedMotion;
 
   useEffect(() => {
-    if (!hasMotion || !viewportRef.current || !trackRef.current) return undefined;
+    const viewport = viewportRef.current;
+    if (!viewport) return undefined;
 
-    const updateTravelDistance = () => {
-      setTravelDistance(Math.max(0, trackRef.current.scrollWidth - viewportRef.current.clientWidth));
+    const updateProgress = () => {
+      const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+      scrollXProgress.set(maxScroll > 0 ? viewport.scrollLeft / maxScroll : 0);
     };
-    const observer = new ResizeObserver(updateTravelDistance);
-    observer.observe(viewportRef.current);
-    observer.observe(trackRef.current);
-    updateTravelDistance();
-    return () => observer.disconnect();
-  }, [hasMotion, images.length]);
+
+    const onWheel = (event) => {
+      if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) return;
+      const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+      const nextScroll = Math.min(maxScroll, Math.max(0, viewport.scrollLeft + event.deltaY));
+      if (nextScroll !== viewport.scrollLeft) {
+        event.preventDefault();
+        viewport.scrollLeft = nextScroll;
+      }
+    };
+
+    const observer = new ResizeObserver(updateProgress);
+    observer.observe(viewport);
+    viewport.addEventListener("scroll", updateProgress, { passive: true });
+    viewport.addEventListener("wheel", onWheel, { passive: false });
+    updateProgress();
+    return () => {
+      observer.disconnect();
+      viewport.removeEventListener("scroll", updateProgress);
+      viewport.removeEventListener("wheel", onWheel);
+    };
+  }, [scrollXProgress]);
 
   return (
     <section
       className="project-inspiration-train"
       aria-label="RidgePoint project inspiration gallery"
-      ref={galleryRef}
-      style={{ "--gallery-count": images.length }}
     >
       <div className="project-inspiration-train-stage">
         <div className={`project-inspiration-train-viewport${hasMotion ? "" : " is-static"}`} ref={viewportRef}>
-          <motion.div className="project-inspiration-train-track" ref={trackRef} style={hasMotion ? { x } : undefined}>
+          <motion.div className="project-inspiration-train-track">
             {images.map((image, index) => (
-              <TrainImage image={image} index={index} count={images.length} scrollYProgress={scrollYProgress} hasMotion={hasMotion} key={image[0]} />
+              <TrainImage image={image} index={index} count={images.length} scrollYProgress={scrollXProgress} hasMotion={hasMotion} key={image[0]} />
             ))}
           </motion.div>
         </div>
