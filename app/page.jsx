@@ -4,7 +4,8 @@ import { PageFrame } from "./components/page-frame";
 import { SiteSchema } from "./components/site-schema";
 import { faqs, processSteps, services, site } from "./lib/site-data";
 
-const serviceImages = ["/images/kitchen-remodel-before-after.png", "/images/placement-bathroom.webp", "/images/rpr-cabinet-sales-installation.jpg", "/images/placement-cabinetry.webp", "/images/placement-deck.webp", "/images/deck-concept-placeholder.webp"];
+const serviceImages = ["/images/kitchen-remodel-before-after.png", "/images/placement-bathroom.webp", "/images/rpr-cabinet-sales-installation.jpg", "/images/placement-cabinetry.webp", "/images/rpr-outdoor-deck.jpg", "/images/rpr-flooring-windows.jpg"];
+const serviceCardNames = { "deck-building": "Outdoor Decks" };
 
 export const metadata = {
   alternates: { canonical: "/" },
@@ -55,7 +56,7 @@ export default function HomePage() {
               <span className="popular-service-content"><strong>Kitchen and Bath Renovations</strong><span>Thoughtful updates for the rooms that carry the most daily use.</span><span className="popular-service-links"><Link href="/services/kitchen-remodeling">Kitchen renovations</Link><Link href="/services/bathroom-remodeling">Bathroom renovations</Link></span></span>
             </article>
             <Link className="popular-service-card popular-service-card-exterior" href="/services/flooring-siding-windows">
-              <Image src="/images/deck-concept-placeholder.webp" fill sizes="(max-width: 820px) 100vw, 25vw" alt="Exterior of a North Florida home" />
+              <Image src="/images/rpr-siding-window-replacement.jpg" fill sizes="(max-width: 820px) 100vw, 25vw" alt="North Florida home with updated light siding and white replacement windows" />
               <span className="popular-service-scrim" />
               <span className="popular-service-content"><strong>Siding and Window Replacement</strong><span>Practical exterior updates for existing homes.</span></span>
             </Link>
@@ -96,7 +97,7 @@ export default function HomePage() {
             <Link className={`service-card service-card-${index + 1}`} href={`/services/${service.slug}`} key={service.slug} aria-label={`Explore ${service.name}`}>
               <Image className="service-card-image" src={serviceImages[index]} fill sizes="(max-width: 820px) 100vw, 50vw" alt="" />
               <span className="service-card-scrim" />
-              <div className="service-card-content"><h3>{service.name}</h3><span>{service.summary}</span></div>
+              <div className="service-card-content"><h3>{serviceCardNames[service.slug] || service.name}</h3><span>{service.summary}</span></div>
             </Link>
           ))}
         </div>
