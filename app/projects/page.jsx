@@ -2,6 +2,7 @@ import { PageFrame } from "../components/page-frame";
 import Link from "next/link";
 import { ProjectGalleryRail } from "../components/project-gallery-rail";
 import { ProjectInspirationSScroll } from "../components/project-inspiration-s-scroll";
+import { ProjectGalleryStickyStack } from "../components/project-gallery-sticky-stack";
 
 export const metadata = {
   title: "Project Inspiration",
@@ -36,7 +37,7 @@ export default function ProjectsPage() {
         <p className="project-gallery-words" aria-label="Ideas. Discover. Create."><span>Ideas.</span><span>Discover.</span><span>Create.</span></p>
       </section>
       <section className="section shell project-gallery">
-        {galleries.map((gallery) => <section className={`project-gallery-section${gallery.id === "kitchens-and-cabinetry" ? " project-gallery-section-featured" : ""}`} id={gallery.id} key={gallery.title}><div><h2>{gallery.title}</h2><p>{gallery.copy}</p></div>{gallery.id === "kitchens-and-cabinetry" ? <ProjectInspirationSScroll images={gallery.images} /> : <ProjectGalleryRail galleryName={gallery.title} images={gallery.images} />}</section>)}
+        {galleries.map((gallery) => <section className={`project-gallery-section${gallery.id === "kitchens-and-cabinetry" ? " project-gallery-section-featured" : ""}`} id={gallery.id} key={gallery.title}><div><h2>{gallery.title}</h2><p>{gallery.copy}</p></div>{gallery.id === "kitchens-and-cabinetry" ? <ProjectInspirationSScroll images={gallery.images} /> : gallery.id === "bathrooms-and-finish-work" ? <ProjectGalleryStickyStack images={gallery.images} /> : <ProjectGalleryRail galleryName={gallery.title} images={gallery.images} />}</section>)}
       </section>
       <section className="quote-band"><div className="shell quote-band-inner"><h2>Have a project in mind?</h2><Link className="button button-light" href="/contact">Request a Quote</Link></div></section>
     </PageFrame>
