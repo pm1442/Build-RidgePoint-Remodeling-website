@@ -8,7 +8,7 @@ export const metadata = { title: "Remodeling and Carpentry Services", descriptio
 const serviceImages = {
   "kitchen-remodeling": { src: "/images/kitchen-remodel-before-after.png", alt: "Before and after kitchen remodel with white cabinets and a marble-look island" },
   "bathroom-remodeling": { src: "/images/bathroom-remodel-before-after.png", alt: "Before and after bathroom remodel with a glass shower and modern vanity" },
-  "cabinet-sales-installation": { src: "/images/north-fl-kitchen-cabinets.png", alt: "Finished North Florida kitchen with light cabinets and a central island" },
+  "cabinet-sales-installation": { src: "/images/rpr-cabinet-sales-installation.jfif", alt: "RidgePoint cabinet installation in a finished white kitchen with black pendant lighting and a central island" },
   "custom-carpentry": { src: "/images/custom-carpentry-built-ins.png", alt: "Custom built-in shelving and fireplace trim in a finished living room" },
   "deck-building": { src: "/images/north-florida-deck.png", alt: "Wood deck with railings and outdoor seating at a North Florida home" },
   "flooring-siding-windows": { src: "/images/north-florida-siding-windows.png", alt: "North Florida home with updated siding and replacement windows" },
