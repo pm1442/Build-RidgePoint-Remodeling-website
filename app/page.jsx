@@ -50,7 +50,7 @@ export default function HomePage() {
               <span className="popular-service-content"><strong>Cabinet Sales and Installation</strong><span>Ready-to-assemble cabinets for DIY projects or professional installation.</span></span>
             </Link>
             <article className="popular-service-card popular-service-card-renovations">
-              <Image src="/images/kitchen-remodel-before-after.png" fill sizes="(max-width: 820px) 100vw, 33vw" alt="Before and after kitchen remodel showing an older wood-cabinet kitchen transformed into a bright white kitchen with an island" />
+              <Image className="popular-service-image-comparison" src="/images/kitchen-remodel-before-after.png" fill sizes="(max-width: 820px) 100vw, 33vw" alt="Before and after kitchen remodel showing an older wood-cabinet kitchen transformed into a bright white kitchen with an island" />
               <span className="popular-service-scrim" />
               <span className="popular-service-content"><strong>Kitchen and Bath Renovations</strong><span>Thoughtful updates for the rooms that carry the most daily use.</span><span className="popular-service-links"><Link href="/services/kitchen-remodeling">Kitchen renovations</Link><Link href="/services/bathroom-remodeling">Bathroom renovations</Link></span></span>
             </article>
