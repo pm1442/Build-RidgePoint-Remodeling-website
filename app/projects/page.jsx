@@ -31,10 +31,9 @@ export default function ProjectsPage() {
       <section className="shell project-gallery-hero" id="projects-top">
         <div>
           <p className="eyebrow">Project Inspiration</p>
-          <h1>Ideas for the spaces that matter most.</h1>
+          <h1 className="project-inspiration-title"><span>Ideas.</span><span>Discover.</span><span>Create.</span></h1>
           <p>Browse kitchen, bathroom, cabinetry, carpentry, and outdoor ideas as you consider what could work in your home.</p>
         </div>
-        <p className="project-gallery-words" aria-label="Ideas. Discover. Create."><span>Ideas.</span><span>Discover.</span><span>Create.</span></p>
       </section>
       <section className="section shell project-gallery">
         {galleries.map((gallery) => <section className={`project-gallery-section${gallery.id === "kitchens-and-cabinetry" ? " project-gallery-section-featured" : ""}`} id={gallery.id} key={gallery.title}><div><h2>{gallery.title}</h2><p>{gallery.copy}</p></div>{gallery.id === "kitchens-and-cabinetry" ? <ProjectInspirationSScroll images={gallery.images} /> : gallery.id === "bathrooms-and-finish-work" ? <ProjectGalleryStickyStack images={gallery.images} /> : <ProjectGalleryRail galleryName={gallery.title} images={gallery.images} />}</section>)}
