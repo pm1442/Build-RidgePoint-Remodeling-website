@@ -4,7 +4,7 @@ import { PageFrame } from "./components/page-frame";
 import { SiteSchema } from "./components/site-schema";
 import { faqs, processSteps, services, site } from "./lib/site-data";
 
-const serviceImages = ["/images/placement-kitchen.webp", "/images/placement-bathroom.webp", "/images/rpr-cabinet-sales-installation.jpg", "/images/placement-cabinetry.webp", "/images/placement-deck.webp", "/images/deck-concept-placeholder.webp"];
+const serviceImages = ["/images/kitchen-remodel-before-after.png", "/images/placement-bathroom.webp", "/images/rpr-cabinet-sales-installation.jpg", "/images/placement-cabinetry.webp", "/images/placement-deck.webp", "/images/deck-concept-placeholder.webp"];
 
 export const metadata = {
   alternates: { canonical: "/" },
@@ -50,7 +50,7 @@ export default function HomePage() {
               <span className="popular-service-content"><strong>Cabinet Sales and Installation</strong><span>Ready-to-assemble cabinets for DIY projects or professional installation.</span></span>
             </Link>
             <article className="popular-service-card popular-service-card-renovations">
-              <Image src="/images/placement-kitchen.webp" fill sizes="(max-width: 820px) 100vw, 33vw" alt="Finished kitchen ready for a renovation project" />
+              <Image src="/images/kitchen-remodel-before-after.png" fill sizes="(max-width: 820px) 100vw, 33vw" alt="Before and after kitchen remodel showing an older wood-cabinet kitchen transformed into a bright white kitchen with an island" />
               <span className="popular-service-scrim" />
               <span className="popular-service-content"><strong>Kitchen and Bath Renovations</strong><span>Thoughtful updates for the rooms that carry the most daily use.</span><span className="popular-service-links"><Link href="/services/kitchen-remodeling">Kitchen renovations</Link><Link href="/services/bathroom-remodeling">Bathroom renovations</Link></span></span>
             </article>
