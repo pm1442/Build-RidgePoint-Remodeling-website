@@ -56,7 +56,7 @@ export default function HomePage() {
               <span className="popular-service-content"><strong>Kitchen and Bath Renovations</strong><span>Thoughtful updates for the rooms that carry the most daily use.</span><span className="popular-service-links"><Link href="/services/kitchen-remodeling">Kitchen renovations</Link><Link href="/services/bathroom-remodeling">Bathroom renovations</Link></span></span>
             </article>
             <Link className="popular-service-card popular-service-card-exterior" href="/services/flooring-siding-windows">
-              <Image src="/images/rpr-siding-window-replacement.jpg" fill sizes="(max-width: 820px) 100vw, 25vw" alt="North Florida home with updated light siding and white replacement windows" />
+              <Image className="popular-service-image-exterior" src="/images/rpr-siding-window-replacement.jpg" fill sizes="(max-width: 820px) 100vw, 25vw" alt="North Florida home with updated light siding and white replacement windows" />
               <span className="popular-service-scrim" />
               <span className="popular-service-content"><strong>Siding and Window Replacement</strong><span>Practical exterior updates for existing homes.</span></span>
             </Link>
