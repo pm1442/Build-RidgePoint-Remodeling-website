@@ -1,13 +1,17 @@
 [
   {
     "id": "new-kitchen-lake-butler",
-    "service": "Kitchen Remodel",
+    "service": "NEW!",
     "title": "New Kitchen in Lake Butler",
     "location": "Lake Butler, Florida",
     "description": "Completed January 2026. White cabinetry, pendant lighting, and a central island create a brighter, more functional kitchen.",
     "images": [
       {
         "src": "/images/projects/new-kitchen-lake-butler-mufsf6wc-1.jpg",
+        "alt": "New Kitchen in Lake Butler in Lake Butler, Florida"
+      },
+      {
+        "src": "/images/projects/new-kitchen-lake-butler-mufskhtw-1.png",
         "alt": "New Kitchen in Lake Butler in Lake Butler, Florida"
       }
     ]
