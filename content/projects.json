@@ -46,14 +46,14 @@
     "service": "Beautiful Bathroom Makeover!",
     "title": "Bath Remodel",
     "location": "Lake Butler Florida",
-    "description": "Finished bathroom vanity update with a black double-sink cabinet, framed mirrors, warm lighting, white countertop, and dark tile flooring.",
+    "description": "Completed shower tile job!",
     "images": [
       {
-        "src": "/images/carpentry-gallery-02.png",
-        "alt": "Custom mudroom built-in with storage cabinets, cubbies, and a wood bench"
+        "src": "/images/projects/bathroom-and-finish-work-muft09ol-1.png",
+        "alt": "Bath Remodel in Lake Butler Florida"
       },
       {
-        "src": "/images/projects/bathroom-and-finish-work-muft09ol-1.png",
+        "src": "/images/projects/bathroom-and-finish-work-muft1qdq-1.jpg",
         "alt": "Bath Remodel in Lake Butler Florida"
       }
     ]
