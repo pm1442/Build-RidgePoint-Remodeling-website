@@ -1,5 +1,18 @@
 [
   {
+    "id": "new-kitchen-mufum6bf",
+    "service": "New Construction Kitchen Finish-Out and Cabinet Installation",
+    "title": "New Kitchen",
+    "location": "Lake Butler, Florida",
+    "description": "Completed in 2024, this new Lake Butler home received a finished kitchen with white shaker cabinetry, quartz countertops, subway-tile backsplash, open wood shelving, black hardware, and practical storage for everyday use.",
+    "images": [
+      {
+        "src": "/images/projects/new-kitchen-mufum6bf-mufum6bg-1.jpg",
+        "alt": "New Kitchen in Lake Butler, Florida"
+      }
+    ]
+  },
+  {
     "id": "kitchen-makeover-with-custom-butcher-block-island-mufu02i9",
     "service": "Kitchen Remodeling and Cabinet Updates",
     "title": "Kitchen Makeover with Custom Butcher-Block Island",
