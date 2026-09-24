@@ -51,7 +51,7 @@ export default function HomePage() {
               <span className="popular-service-content"><strong>Cabinet Sales and Installation</strong><span>Ready-to-assemble cabinets for DIY projects or professional installation.</span></span>
             </Link>
             <article className="popular-service-card popular-service-card-renovations">
-              <Image className="popular-service-image-bathroom" src="/images/rpr-bathroom-remodel-lake-butler.png" fill sizes="(max-width: 820px) 100vw, 33vw" alt="Finished bathroom remodel in Lake Butler with a black vanity, double mirrored cabinets, and black tile flooring" />
+              <Image className="popular-service-image-bathroom" src="/images/rpr-kitchen-bath-popular-service.png" fill sizes="(max-width: 820px) 100vw, 33vw" alt="Finished bathroom remodel with a black vanity, double mirrored cabinets, and black tile flooring" />
               <span className="popular-service-scrim" />
               <span className="popular-service-content"><strong>Kitchen and Bath Renovations</strong><span>Thoughtful updates for the rooms that carry the most daily use.</span><span className="popular-service-links"><Link href="/services/kitchen-remodeling">Kitchen renovations</Link><Link href="/services/bathroom-remodeling">Bathroom renovations</Link></span></span>
             </article>
