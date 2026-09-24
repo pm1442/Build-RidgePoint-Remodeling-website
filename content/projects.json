@@ -1,5 +1,18 @@
 [
   {
+    "id": "stunning-makeover-mufvr4ub",
+    "service": "Kitchen Remodel",
+    "title": "Stunning Makeover",
+    "location": "Worthington Springs, Florida",
+    "description": "Finished kitchen remodel with custom white cabinetry, crown molding, upgraded countertops, a large island, stainless-steel appliances, and a sliding barn door for a bright, functional layout",
+    "images": [
+      {
+        "src": "/images/projects/stunning-makeover-mufvr4ub-mufvr4ub-1.jpg",
+        "alt": "Kitchen remodel in Worthington Springs, Florida, with white cabinets, a large island, and stainless-steel appliances"
+      }
+    ]
+  },
+  {
     "id": "bright-bathroom-makeover-mufvhm0a",
     "service": "Bath Remodel",
     "title": "Bright Bathroom Makeover",
