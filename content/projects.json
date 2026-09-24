@@ -1,5 +1,18 @@
 [
   {
+    "id": "bright-bathroom-makeover-mufvhm0a",
+    "service": "Bath Remodel",
+    "title": "Bright Bathroom Makeover",
+    "location": "Lake Butler, Florida",
+    "description": "Bathroom makeover with a new white tub and shower surround, recessed lighting, fresh wall finishes, beadboard detail, a modern vanity, and marble-look flooring for a clean, updated space.",
+    "images": [
+      {
+        "src": "/images/projects/bright-bathroom-makeover-mufvhm0a-mufvhm0a-1.jpg",
+        "alt": "Bright Bathroom Makeover in Lake Butler, Florida"
+      }
+    ]
+  },
+  {
     "id": "new-kitchen-mufum6bf",
     "service": "New Kitchen & Bath Build-outs",
     "title": "Finished 2024",
