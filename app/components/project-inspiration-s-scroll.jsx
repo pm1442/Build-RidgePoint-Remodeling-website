@@ -21,12 +21,11 @@ function useCompactViewport() {
 function TrainImage({ image, index, count, scrollYProgress, hasMotion }) {
   const centerPoint = count > 1 ? index / (count - 1) : 0;
   const scale = useTransform(scrollYProgress, (progress) => Math.max(0.72, 1 - Math.abs(progress - centerPoint) * 0.62));
-  const opacity = useTransform(scrollYProgress, (progress) => Math.max(0.24, 1 - Math.abs(progress - centerPoint) * 2.1));
 
   return (
     <motion.figure
       className="project-inspiration-train-card"
-      style={hasMotion ? { scale, opacity } : undefined}
+      style={hasMotion ? { scale } : undefined}
     >
       <Image src={image[0]} alt={image[1]} fill sizes="(max-width: 720px) 84vw, (max-width: 1100px) 60vw, 760px" />
     </motion.figure>
