@@ -24,7 +24,12 @@ export function SiteFooter() {
           <p>{site.hours}</p>
         </div>
       </div>
-      <div className="footer-bottom"><div className="shell">© {new Date().getFullYear()} RidgePoint Remodeling & Carpentry</div></div>
+      <div className="footer-bottom">
+        <div className="shell footer-bottom-inner">
+          <span>© {new Date().getFullYear()} RidgePoint Remodeling & Carpentry. All rights reserved.</span>
+          <span>Website design and hosting by <a href="https://www.palmtec.biz" target="_blank" rel="noreferrer">PalmTec LLC</a>.</span>
+        </div>
+      </div>
     </footer>
   );
 }

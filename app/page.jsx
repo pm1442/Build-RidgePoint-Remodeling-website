@@ -46,7 +46,7 @@ export default function HomePage() {
           </div>
           <div className="popular-service-grid">
             <Link className="popular-service-card popular-service-card-cabinets" href="/services/cabinet-sales-installation">
-              <Image src="/images/rpr-cabinet-sales-installation.jpg" fill sizes="(max-width: 820px) 100vw, 42vw" alt="RidgePoint cabinet installation in a finished white kitchen with black pendant lighting and a central island" />
+              <Image src="/images/rpr-cabinet-sales-installation-clean.png" fill sizes="(max-width: 820px) 100vw, 42vw" alt="Finished white kitchen with black pendant lighting, custom cabinetry, and a central island" />
               <span className="popular-service-scrim" />
               <span className="popular-service-content"><strong>Cabinet Sales and Installation</strong><span>Ready-to-assemble cabinets for DIY projects or professional installation.</span></span>
             </Link>
