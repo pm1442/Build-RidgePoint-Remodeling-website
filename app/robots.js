@@ -3,7 +3,7 @@ import { site } from "./lib/site-data";
 export default function robots() {
   return {
     rules: [
-      { userAgent: "*", allow: "/" },
+      { userAgent: "*", allow: "/", disallow: ["/admin", "/api/"] },
       { userAgent: "Googlebot", allow: "/" },
       { userAgent: "Googlebot-Image", allow: "/" },
       { userAgent: "OAI-SearchBot", allow: "/" },

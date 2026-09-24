@@ -1,0 +1,46 @@
+[
+  {
+    "id": "new-kitchen-lake-butler",
+    "service": "Kitchen Remodel",
+    "title": "New Kitchen in Lake Butler",
+    "location": "Lake Butler, Florida",
+    "description": "Completed January 2026. White cabinetry, pendant lighting, and a central island create a brighter, more functional kitchen.",
+    "images": [
+      { "src": "/images/rpr-jasons-kitchen-final.png", "alt": "Completed kitchen remodel in Lake Butler, Florida, with white cabinetry, pendant lighting, and a central island" },
+      { "src": "/images/rpr-new-kitchen-lake-butler.jpg", "alt": "Brand new white kitchen by RidgePoint Remodeling & Carpentry in Lake Butler, Florida" },
+      { "src": "/images/kitchen-gallery-02.png", "alt": "Finished kitchen with light cabinets, stainless appliances, and a window over the sink" },
+      { "src": "/images/kitchen-gallery-03.png", "alt": "Open kitchen with a green island, pendant lights, and natural wood flooring" },
+      { "src": "/images/kitchen-gallery-04.jpg", "alt": "White kitchen with a marble-look island and stainless appliances" }
+    ]
+  },
+  {
+    "id": "bathroom-and-finish-work",
+    "service": "Bathroom Remodel",
+    "title": "Bathroom and Finish Work",
+    "location": "North Florida",
+    "description": "Thoughtful bathroom updates, trim, storage, and finish details that make everyday spaces work better.",
+    "images": [
+      { "src": "/images/bathroom-gallery-01.png", "alt": "Bathroom with a white vanity, subway-tile tub surround, and wood-look floor" },
+      { "src": "/images/bathroom-gallery-03.png", "alt": "Bathroom with a white vanity, black fixtures, and glass shower" },
+      { "src": "/images/rpr-updated-ceiling.jpg", "alt": "Updated white beadboard ceiling with trim details by RidgePoint Remodeling & Carpentry" },
+      { "src": "/images/rpr-loft-railing.jpg", "alt": "Open North Florida interior with black loft railing, barn doors, and finished flooring" },
+      { "src": "/images/bathroom-gallery-05.png", "alt": "Before and after interior trim work around a window" },
+      { "src": "/images/carpentry-gallery-01.png", "alt": "Built-in mudroom storage with a wood bench and black-framed door" },
+      { "src": "/images/carpentry-gallery-02.png", "alt": "Custom mudroom built-in with storage cabinets, cubbies, and a wood bench" }
+    ]
+  },
+  {
+    "id": "outdoor-and-exterior-updates",
+    "service": "Exterior Updates",
+    "title": "Outdoor and Exterior Updates",
+    "location": "North Florida",
+    "description": "Decks, siding, windows, and practical updates that help a home feel renewed inside and out.",
+    "images": [
+      { "src": "/images/rpr-outdoor-deck.jpg", "alt": "Finished RidgePoint deck with evening lighting and wood steps" },
+      { "src": "/images/outdoor-exterior-gallery-02.png", "alt": "North Florida deck with a wood pergola and a finished lawn" },
+      { "src": "/images/rpr-siding-windows-house.jpg", "alt": "North Florida home with board-and-batten siding and replacement windows" },
+      { "src": "/images/outdoor-exterior-gallery-08.png", "alt": "Window trim work in progress beside newly installed exterior siding" },
+      { "src": "/images/outdoor-exterior-gallery-09.png", "alt": "North Florida home with board-and-batten exterior siding and replacement windows" }
+    ]
+  }
+]
