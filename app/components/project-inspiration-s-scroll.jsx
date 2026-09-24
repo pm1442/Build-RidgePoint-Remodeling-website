@@ -24,10 +24,13 @@ function TrainImage({ image, index, count, scrollYProgress, hasMotion }) {
 
   return (
     <motion.figure
-      className="project-inspiration-train-card"
+      className={`project-inspiration-train-card${image[2] ? " has-caption" : ""}`}
       style={hasMotion ? { scale } : undefined}
     >
-      <Image src={image[0]} alt={image[1]} fill sizes="(max-width: 720px) 84vw, (max-width: 1100px) 60vw, 760px" />
+      <div className="project-inspiration-train-card-media">
+        <Image src={image[0]} alt={image[1]} fill sizes="(max-width: 720px) 84vw, (max-width: 1100px) 60vw, 760px" />
+      </div>
+      {image[2] && <figcaption className="project-inspiration-train-caption">{image[2]}</figcaption>}
     </motion.figure>
   );
 }

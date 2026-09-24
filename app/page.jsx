@@ -4,7 +4,7 @@ import { PageFrame } from "./components/page-frame";
 import { SiteSchema } from "./components/site-schema";
 import { faqs, processSteps, services, site } from "./lib/site-data";
 
-const serviceImages = ["/images/kitchen-remodel-before-after.png", "/images/placement-bathroom.webp", "/images/rpr-cabinet-sales-installation-clean.png", "/images/rpr-custom-carpentry-trim.jpg", "/images/rpr-outdoor-deck.jpg", "/images/rpr-flooring-siding-windows.jpg"];
+const serviceImages = ["/images/kitchen-remodel-before-after.png", "/images/rpr-lake-butler-bathroom-remodel.png", "/images/rpr-cabinet-sales-installation-clean.png", "/images/rpr-custom-carpentry-trim.jpg", "/images/rpr-outdoor-deck.jpg", "/images/rpr-flooring-siding-windows.jpg"];
 const serviceCardNames = { "deck-building": "Outdoor Decks" };
 
 export const metadata = {
