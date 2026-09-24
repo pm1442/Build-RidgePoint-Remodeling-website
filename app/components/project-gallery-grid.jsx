@@ -41,7 +41,7 @@ export function ProjectGalleryGrid({ galleries }) {
       <div className="project-grid">
         {galleries.map((project) => (
           <button className="project-grid-card" type="button" onClick={() => openProject(project)} key={project.id}>
-            <span className="project-grid-card-media"><Image src={project.images[0].src} alt="" fill sizes="(max-width: 720px) 100vw, (max-width: 980px) 50vw, 25vw" /></span>
+            <span className="project-grid-card-media"><Image src={project.images[0].src} alt={project.images[0].alt} fill sizes="(max-width: 720px) 100vw, (max-width: 980px) 50vw, 25vw" /></span>
             <span className="project-grid-card-content"><span className="project-grid-card-service">{project.service}</span><strong>{project.title}</strong><span className="project-grid-card-location">{project.location}</span><span className="project-grid-card-description">{project.description}</span><span className="project-grid-card-action">View project</span></span>
           </button>
         ))}

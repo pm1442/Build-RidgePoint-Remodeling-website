@@ -32,11 +32,12 @@ async function saveNewImages(images, id, title) {
   for (const [index, image] of images.entries()) {
     const match = /^data:(image\/(?:jpeg|png|webp));base64,(.+)$/.exec(image.dataUrl || "");
     if (!match || match[2].length > 8_000_000) throw new Error("Use JPG, PNG, or WebP photos under 6 MB each.");
+    if (typeof image.alt !== "string" || !image.alt.trim()) throw new Error("Add a description for every photo. Each description becomes that photo's alt text.");
     const extension = match[1] === "image/jpeg" ? "jpg" : match[1].split("/")[1];
     const filename = `public/images/projects/${id}-${Date.now().toString(36)}-${index + 1}.${extension}`;
     const upload = await github(filename, { method: "PUT", body: JSON.stringify({ message: `Add gallery photo for ${title}`, content: match[2], branch }) });
     if (!upload.ok) throw new Error("GitHub could not save a photo. Check the token's Contents permission.");
-    saved.push({ src: `/${filename.replace("public/", "")}`, alt: image.alt?.trim() || `${title} project photo ${index + 1}` });
+    saved.push({ src: `/${filename.replace("public/", "")}`, alt: image.alt.trim() });
   }
   return saved;
 }
