@@ -71,7 +71,7 @@
     "service": "Outdoor Decks",
     "title": "2022 - Outdoor Deck Remodel",
     "location": "Lake Butler, Florida",
-    "description": "Before picture",
+    "description": "Project Complete!",
     "images": [
       {
         "src": "/images/projects/outdoor-and-exterior-updates-muftayx1-1.png",
@@ -79,6 +79,10 @@
       },
       {
         "src": "/images/projects/outdoor-and-exterior-updates-muftddv4-1.jpg",
+        "alt": "2022 - Outdoor Deck Remodel in Lake Butler, Florida"
+      },
+      {
+        "src": "/images/projects/outdoor-and-exterior-updates-mufteo0a-1.jpg",
         "alt": "2022 - Outdoor Deck Remodel in Lake Butler, Florida"
       }
     ]
