@@ -4,7 +4,7 @@ import { PageFrame } from "./components/page-frame";
 import { SiteSchema } from "./components/site-schema";
 import { faqs, processSteps, services, site } from "./lib/site-data";
 
-const serviceImages = ["/images/kitchen-remodel-before-after.png", "/images/placement-bathroom.webp", "/images/rpr-cabinet-sales-installation.jpg", "/images/rpr-custom-carpentry-trim.jpg", "/images/rpr-outdoor-deck.jpg", "/images/rpr-flooring-siding-windows.jpg"];
+const serviceImages = ["/images/kitchen-remodel-before-after.png", "/images/placement-bathroom.webp", "/images/rpr-cabinet-sales-installation-clean.png", "/images/rpr-custom-carpentry-trim.jpg", "/images/rpr-outdoor-deck.jpg", "/images/rpr-flooring-siding-windows.jpg"];
 const serviceCardNames = { "deck-building": "Outdoor Decks" };
 
 export const metadata = {
@@ -51,12 +51,12 @@ export default function HomePage() {
               <span className="popular-service-content"><strong>Cabinet Sales and Installation</strong><span>Ready-to-assemble cabinets for DIY projects or professional installation.</span></span>
             </Link>
             <article className="popular-service-card popular-service-card-renovations">
-              <Image className="popular-service-image-comparison" src="/images/kitchen-remodel-before-after.png" fill sizes="(max-width: 820px) 100vw, 33vw" alt="Before and after kitchen remodel showing an older wood-cabinet kitchen transformed into a bright white kitchen with an island" />
+              <Image className="popular-service-image-bathroom" src="/images/rpr-bathroom-remodel-lake-butler.png" fill sizes="(max-width: 820px) 100vw, 33vw" alt="Finished bathroom remodel in Lake Butler with a black vanity, double mirrored cabinets, and black tile flooring" />
               <span className="popular-service-scrim" />
               <span className="popular-service-content"><strong>Kitchen and Bath Renovations</strong><span>Thoughtful updates for the rooms that carry the most daily use.</span><span className="popular-service-links"><Link href="/services/kitchen-remodeling">Kitchen renovations</Link><Link href="/services/bathroom-remodeling">Bathroom renovations</Link></span></span>
             </article>
             <Link className="popular-service-card popular-service-card-exterior" href="/services/flooring-siding-windows">
-              <Image className="popular-service-image-exterior" src="/images/rpr-siding-windows-house.jpg" fill sizes="(max-width: 820px) 100vw, 25vw" alt="North Florida home with board-and-batten siding and white replacement windows" />
+              <Image className="popular-service-image-exterior" src="/images/rpr-siding-window-popular-service.png" fill sizes="(max-width: 820px) 100vw, 25vw" alt="Home exterior with board-and-batten siding and white replacement windows surrounded by mature North Florida trees" />
               <span className="popular-service-scrim" />
               <span className="popular-service-content"><strong>Siding and Window Replacement</strong><span>Practical exterior updates for existing homes.</span></span>
             </Link>
