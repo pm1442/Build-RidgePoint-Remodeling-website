@@ -4,7 +4,7 @@
     "service": "Beautiful Kitchen Build Out!",
     "title": "New Build!",
     "location": "Lake Butler, Florida",
-    "description": "Unique angle - Completed kitchen featuring dark shaker cabinets, quartz countertops, subway-tile backsplash, under-cabinet lighting, new flooring, and a built-in workspace.",
+    "description": "Center shot of kitchen.",
     "images": [
       {
         "src": "/images/projects/new-build-mufsrdxd-mufsrdxd-1.jpg",
@@ -12,6 +12,10 @@
       },
       {
         "src": "/images/projects/new-build-mufsrdxd-mufsssz2-1.jpg",
+        "alt": "New Build! in Lake Butler, Florida"
+      },
+      {
+        "src": "/images/projects/new-build-mufsrdxd-mufstw6o-1.jpg",
         "alt": "New Build! in Lake Butler, Florida"
       }
     ]
