@@ -68,30 +68,14 @@
   },
   {
     "id": "outdoor-and-exterior-updates",
-    "service": "Exterior Updates",
-    "title": "Outdoor and Exterior Updates",
-    "location": "North Florida",
-    "description": "Decks, siding, windows, and practical updates that help a home feel renewed inside and out.",
+    "service": "Outdoor Decks",
+    "title": "2022 - New Deck Build",
+    "location": "Lake Butler, Florida",
+    "description": "Completed pressure-treated deck addition with new stairs, handrails, and a gated enclosure below for safe, practical outdoor access.",
     "images": [
       {
         "src": "/images/rpr-outdoor-deck.jpg",
         "alt": "Finished RidgePoint deck with evening lighting and wood steps"
-      },
-      {
-        "src": "/images/outdoor-exterior-gallery-02.png",
-        "alt": "North Florida deck with a wood pergola and a finished lawn"
-      },
-      {
-        "src": "/images/rpr-siding-windows-house.jpg",
-        "alt": "North Florida home with board-and-batten siding and replacement windows"
-      },
-      {
-        "src": "/images/outdoor-exterior-gallery-08.png",
-        "alt": "Window trim work in progress beside newly installed exterior siding"
-      },
-      {
-        "src": "/images/outdoor-exterior-gallery-09.png",
-        "alt": "North Florida home with board-and-batten exterior siding and replacement windows"
       }
     ]
   }
