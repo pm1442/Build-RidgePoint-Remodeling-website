@@ -15,9 +15,9 @@ export const metadata = {
     siteName: "RidgePoint Remodeling & Carpentry",
     title: "RidgePoint Remodeling & Carpentry | Lake Butler, FL",
     description: "Kitchen, bath, cabinetry, carpentry, deck, siding, window, and flooring work for homeowners in Lake Butler and nearby North Florida communities.",
-    images: [{ url: "/images/ridgepoint-home-hero.png", alt: "Covered wood porch beside a North Florida home" }],
+    images: [{ url: "/images/ridgepoint-social-share.jpg", width: 1200, height: 630, alt: "Covered porch and exterior renovation by RidgePoint Remodeling & Carpentry" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/ridgepoint-home-hero.png"] },
+  twitter: { card: "summary_large_image", images: ["/images/ridgepoint-social-share.jpg"] },
 };
 
 export default function HomePage() {

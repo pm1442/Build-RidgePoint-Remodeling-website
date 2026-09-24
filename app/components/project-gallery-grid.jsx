@@ -9,14 +9,22 @@ export function ProjectGalleryGrid({ galleries }) {
 
   useEffect(() => {
     if (!selected) return undefined;
-    const closeOnEscape = (event) => {
-      if (event.key === "Escape") setSelected(null);
+    const handleKeyboardNavigation = (event) => {
+      if (event.key === "Escape") {
+        setSelected(null);
+      } else if (event.key === "ArrowLeft" && selected.images.length > 1) {
+        event.preventDefault();
+        setActiveIndex((index) => (index - 1 + selected.images.length) % selected.images.length);
+      } else if (event.key === "ArrowRight" && selected.images.length > 1) {
+        event.preventDefault();
+        setActiveIndex((index) => (index + 1) % selected.images.length);
+      }
     };
     document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", closeOnEscape);
+    window.addEventListener("keydown", handleKeyboardNavigation);
     return () => {
       document.body.style.overflow = "";
-      window.removeEventListener("keydown", closeOnEscape);
+      window.removeEventListener("keydown", handleKeyboardNavigation);
     };
   }, [selected]);
 
