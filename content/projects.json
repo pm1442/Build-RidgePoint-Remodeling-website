@@ -4,7 +4,7 @@
     "service": "Beautiful Kitchen Build Out!",
     "title": "New Build!",
     "location": "Lake Butler, Florida",
-    "description": "Center shot of kitchen.",
+    "description": "Living area right off of kitchen. Ready to live in.",
     "images": [
       {
         "src": "/images/projects/new-build-mufsrdxd-mufsrdxd-1.jpg",
@@ -16,6 +16,10 @@
       },
       {
         "src": "/images/projects/new-build-mufsrdxd-mufstw6o-1.jpg",
+        "alt": "New Build! in Lake Butler, Florida"
+      },
+      {
+        "src": "/images/projects/new-build-mufsrdxd-mufsuqrd-1.jpg",
         "alt": "New Build! in Lake Butler, Florida"
       }
     ]
