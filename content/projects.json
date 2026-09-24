@@ -43,38 +43,18 @@
   },
   {
     "id": "bathroom-and-finish-work",
-    "service": "Bathroom Remodel",
-    "title": "Bathroom and Finish Work",
-    "location": "North Florida",
-    "description": "Thoughtful bathroom updates, trim, storage, and finish details that make everyday spaces work better.",
+    "service": "Beautiful Bathroom Makeover!",
+    "title": "Bath Remodel",
+    "location": "Lake Butler Florida",
+    "description": "Finished bathroom vanity update with a black double-sink cabinet, framed mirrors, warm lighting, white countertop, and dark tile flooring.",
     "images": [
-      {
-        "src": "/images/bathroom-gallery-01.png",
-        "alt": "Bathroom with a white vanity, subway-tile tub surround, and wood-look floor"
-      },
-      {
-        "src": "/images/bathroom-gallery-03.png",
-        "alt": "Bathroom with a white vanity, black fixtures, and glass shower"
-      },
-      {
-        "src": "/images/rpr-updated-ceiling.jpg",
-        "alt": "Updated white beadboard ceiling with trim details by RidgePoint Remodeling & Carpentry"
-      },
-      {
-        "src": "/images/rpr-loft-railing.jpg",
-        "alt": "Open North Florida interior with black loft railing, barn doors, and finished flooring"
-      },
-      {
-        "src": "/images/bathroom-gallery-05.png",
-        "alt": "Before and after interior trim work around a window"
-      },
-      {
-        "src": "/images/carpentry-gallery-01.png",
-        "alt": "Built-in mudroom storage with a wood bench and black-framed door"
-      },
       {
         "src": "/images/carpentry-gallery-02.png",
         "alt": "Custom mudroom built-in with storage cabinets, cubbies, and a wood bench"
+      },
+      {
+        "src": "/images/projects/bathroom-and-finish-work-muft09ol-1.png",
+        "alt": "Bath Remodel in Lake Butler Florida"
       }
     ]
   },
