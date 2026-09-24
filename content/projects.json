@@ -1,5 +1,38 @@
 [
   {
+    "id": "subfloor-repair-mufwafgz",
+    "service": "Subfloor Repair and Bathroom Renovation",
+    "title": "Subfloor Repair",
+    "location": "Lake Butler, Florida",
+    "description": "Structural subfloor repair and partial bathroom renovation, including removal of damaged materials, installation of new plywood subflooring, and preparation for updated finishes.",
+    "images": [
+      {
+        "src": "/images/projects/subfloor-repair-mufwafgz-mufwafh0-1.jpg",
+        "alt": "Damaged flooring removed during subfloor repair in Worthington Springs, Florida."
+      },
+      {
+        "src": "/images/projects/subfloor-repair-mufwafgz-mufwage9-2.jpg",
+        "alt": "Bathroom and floor demolition during a Worthington Springs, Florida, home repair."
+      },
+      {
+        "src": "/images/projects/subfloor-repair-mufwafgz-mufwah9o-3.jpg",
+        "alt": "New tile flooring installed during subfloor repair near Lake Butler, Florida."
+      },
+      {
+        "src": "/images/projects/subfloor-repair-mufwafgz-mufwaia4-4.jpg",
+        "alt": "Bathroom wall opened during subfloor repair and partial bathroom renovation in Worthington Springs, Florida."
+      },
+      {
+        "src": "/images/projects/subfloor-repair-mufwafgz-mufwaj6q-5.jpg",
+        "alt": "New tile floor installed during a Worthington Springs, Florida, home repair."
+      },
+      {
+        "src": "/images/projects/subfloor-repair-mufwafgz-mufwak2i-6.jpg",
+        "alt": "Bathroom renovation in progress with new wall finishes in Worthington Springs, Florida."
+      }
+    ]
+  },
+  {
     "id": "stunning-makeover-mufvr4ub",
     "service": "Kitchen Remodel",
     "title": "Stunning Makeover",
