@@ -45,8 +45,8 @@
     "id": "bathroom-and-finish-work",
     "service": "Beautiful Bathroom Makeover!",
     "title": "Bath Remodel",
-    "location": "Lake Butler Florida",
-    "description": "Completed shower tile job!",
+    "location": "Lake Butler, Florida",
+    "description": "Bathroom remodel in progress: walls opened for updated plumbing, layout adjustments, and preparation for the new finishes.",
     "images": [
       {
         "src": "/images/projects/bathroom-and-finish-work-muft09ol-1.png",
@@ -55,6 +55,10 @@
       {
         "src": "/images/projects/bathroom-and-finish-work-muft1qdq-1.jpg",
         "alt": "Bath Remodel in Lake Butler Florida"
+      },
+      {
+        "src": "/images/projects/bathroom-and-finish-work-muft3hbu-1.jpg",
+        "alt": "Bath Remodel in Lake Butler, Florida"
       }
     ]
   },
