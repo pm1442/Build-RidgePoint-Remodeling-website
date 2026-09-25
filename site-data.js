@@ -45,8 +45,8 @@ export const services = [
     slug: "cabinet-sales-installation",
     name: "Cabinet Sales and Installation",
     eyebrow: "Cabinets your way",
-    summary: "Ready-to-assemble cabinets available to purchase for a DIY project or with professional installation.",
-    details: ["Ready-to-assemble cabinet sales", "Cabinets for DIY installation", "Professional cabinet installation", "Kitchens, baths, laundry rooms, and built-ins"],
+    summary: "Choose new cabinets for your space, with professional installation available from RidgePoint.",
+    details: ["New cabinet selection and sales", "Professional cabinet installation", "Kitchen, bath, and laundry cabinetry", "Built-ins and practical storage"],
   },
   {
     slug: "custom-carpentry",
@@ -91,8 +91,8 @@ export const faqs = [
     answer: "Project cost depends on the condition of the home, materials, and the work involved. RidgePoint discusses the scope with you first, then can provide clear next steps for pricing.",
   },
   {
-    question: "Do you sell cabinets without installation?",
-    answer: "Yes. RidgePoint offers ready-to-assemble cabinets for homeowners who plan to install them themselves, as well as cabinet purchase and professional installation for homeowners who want one point of contact.",
+    question: "Can RidgePoint help me get new cabinets installed?",
+    answer: "Yes. RidgePoint can help you select and obtain new cabinets, then provide professional installation for one clear point of contact throughout the cabinet portion of the project.",
   },
   {
     question: "Do you carry insurance?",

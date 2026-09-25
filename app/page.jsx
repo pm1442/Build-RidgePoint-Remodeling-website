@@ -48,7 +48,7 @@ export default function HomePage() {
             <Link className="popular-service-card popular-service-card-cabinets" href="/services/cabinet-sales-installation">
               <Image src="/images/rpr-cabinet-sales-installation-clean.png" fill sizes="(max-width: 820px) 100vw, 42vw" alt="Finished white kitchen with black pendant lighting, custom cabinetry, and a central island" />
               <span className="popular-service-scrim" />
-              <span className="popular-service-content"><strong>Cabinet Sales and Installation</strong><span>Ready-to-assemble cabinets for DIY projects or professional installation.</span></span>
+              <span className="popular-service-content"><strong>Cabinet Sales and Installation</strong><span>Choose new cabinets for your space, with professional installation from RidgePoint.</span></span>
             </Link>
             <article className="popular-service-card popular-service-card-renovations">
               <Image className="popular-service-image-bathroom" src="/images/rpr-kitchen-bath-popular-service.png" fill sizes="(max-width: 820px) 100vw, 33vw" alt="Finished bathroom remodel with a black vanity, double mirrored cabinets, and black tile flooring" />

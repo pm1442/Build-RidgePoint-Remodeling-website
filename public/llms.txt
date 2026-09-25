@@ -15,7 +15,7 @@ RidgePoint Remodeling & Carpentry is a Lake Butler, Florida home remodeling and 
 
 - Kitchen remodeling: /services/kitchen-remodeling
 - Bathroom remodeling: /services/bathroom-remodeling
-- Ready-to-assemble cabinet sales and cabinet installation: /services/cabinet-sales-installation
+- New cabinet sales and professional cabinet installation: /services/cabinet-sales-installation
 - Custom carpentry, trim, millwork, and built-ins: /services/custom-carpentry
 - New decks and deck replacements: /services/deck-building
 - Flooring, siding, and window updates: /services/flooring-siding-windows

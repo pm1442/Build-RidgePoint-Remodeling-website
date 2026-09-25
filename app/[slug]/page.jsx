@@ -16,14 +16,14 @@ const pages = {
     service: "Home Remodeling and Carpentry",
     title: "Remodeling Contractor Serving Gainesville, FL",
     description: "RidgePoint serves Gainesville homeowners looking for clear communication and hands-on help with home repair, renovation, and carpentry projects.",
-    focus: ["Kitchen and bathroom improvements", "Ready-to-assemble cabinet sales and installation", "Trim, doors, built-ins, and practical home updates"],
+    focus: ["Kitchen and bathroom improvements", "New cabinet sales and professional installation", "Trim, doors, built-ins, and practical home updates"],
   },
   "remodeling-contractor-lake-city-fl": {
     city: "Lake City",
     service: "Home Remodeling and Carpentry",
     title: "Remodeling Contractor Serving Lake City, FL",
     description: "RidgePoint serves Lake City homeowners with renovation planning, finish carpentry, cabinet installation, and outdoor improvement projects.",
-    focus: ["Kitchen, bath, and flooring updates", "Cabinets for DIY purchase or professional installation", "Decks, siding, window replacement, and finish details"],
+    focus: ["Kitchen, bath, and flooring updates", "New cabinets with professional installation", "Decks, siding, window replacement, and finish details"],
   },
   "deck-builder-lake-butler-fl": {
     city: "Lake Butler",
