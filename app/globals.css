@@ -101,6 +101,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,t
 @media (max-width: 820px) { .contact-page { grid-template-columns:1fr; gap:42px; }.contact-page-intro { padding-top:0; }.contact-form-panel { order:-1; max-width:44rem; } }
 @media (max-width: 480px) { .contact-page { padding:34px 0 64px; }.contact-form-panel { padding:22px; }.contact-form-panel h2 { font-size:clamp(1.8rem,8vw,2.25rem); }.contact-form-panel .quote-form { margin-top:22px; }.contact-callout { margin-top:36px; } }
 
+.contact-callout .contact-social-link { margin-top:18px; font-size:.92rem; letter-spacing:0; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; }.home-social-link { margin-left:20px; }
+@media (max-width: 480px) { .home-social-link { display:table; margin-left:0; } }
+
 /* The portrait exterior image fills the service card while favoring the home over the tree canopy. */
 .popular-service-card > img.popular-service-image-exterior { object-fit:cover; object-position:center 72%; }.popular-service-card-exterior .popular-service-scrim { background:linear-gradient(0deg, rgb(15 20 18 / .96) 0%, rgb(15 20 18 / .76) 36%, rgb(15 20 18 / .16) 60%, transparent 100%); }
 

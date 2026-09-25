@@ -6,6 +6,7 @@ export const site = {
   phoneDisplay: "(386) 291-5200",
   phone: "+13862915200",
   email: "jason@ridgepointremodeling.com",
+  facebookUrl: "https://www.facebook.com/RidgePointRemodeling",
   address: "8831 SW 88th Ct, Lake Butler, FL 32054",
   hours: "Monday through Friday, 8:00 AM to 5:00 PM. Closed major holidays.",
   openingHours: {

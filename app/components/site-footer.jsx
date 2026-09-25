@@ -22,6 +22,7 @@ export function SiteFooter() {
           <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
           <a href="https://maps.app.goo.gl/WhDza9c2G3ArN4Zs5" target="_blank" rel="noreferrer" aria-label={`Open directions to ${site.address} in Google Maps`}>{site.address}</a>
           <p>{site.hours}</p>
+          <a href={site.facebookUrl} target="_blank" rel="noreferrer">Follow us on Facebook</a>
         </div>
       </div>
       <div className="footer-bottom">

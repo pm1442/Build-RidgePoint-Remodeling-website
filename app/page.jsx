@@ -75,6 +75,7 @@ export default function HomePage() {
             <h2>Clear answers from the person leading the work.</h2>
             <p>Jason listens first, then helps you understand the practical options for your home. Ridge Point Remodeling & Carpentry is licensed and insured. Florida License #CRC1335692.</p>
             <Link className="text-link" href="/about">About Us</Link>
+            <a className="text-link home-social-link" href={site.facebookUrl} target="_blank" rel="noreferrer">Follow recent projects on Facebook</a>
           </div>
         </div>
       </section>
