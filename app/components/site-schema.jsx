@@ -10,6 +10,7 @@ export function SiteSchema() {
         name: site.name,
         legalName: site.legalName,
         url: site.url,
+        sameAs: [site.facebookUrl],
         telephone: site.phone,
         email: site.email,
         founder: { "@id": `${site.url}/#jason-miller` },
