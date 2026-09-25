@@ -7,8 +7,8 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="shell header-inner">
-        <Link className="brand" href="/" aria-label="RidgePoint home">
-          <Image src="/images/ridgepoint-remodeling-logo-official.png" alt="RidgePoint Remodeling & Carpentry" width={820} height={225} sizes="(max-width: 720px) 150px, 210px" priority />
+        <Link className="brand" href="/" aria-label="Ridge Point home">
+          <Image src="/images/ridgepoint-remodeling-logo-official.png" alt="Ridge Point Remodeling & Carpentry" width={820} height={225} sizes="(max-width: 720px) 150px, 210px" priority />
         </Link>
         <nav aria-label="Primary navigation" className="site-nav">
           <Link href="/services">Services</Link>

@@ -9,10 +9,10 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "RidgePoint Remodeling & Carpentry",
-    title: "Request a Quote from RidgePoint Remodeling",
+    siteName: "Ridge Point Remodeling & Carpentry",
+    title: "Request a Quote from Ridge Point Remodeling",
     description: "Share a few details about the room, repair, or outdoor space you want to improve.",
-    images: [{ url: "/images/contact-quote-og.png", alt: "RidgePoint Remodeling quote request form" }],
+    images: [{ url: "/images/contact-quote-og.png", alt: "Ridge Point Remodeling quote request form" }],
   },
   twitter: { card: "summary_large_image", images: ["/images/contact-quote-og.png"] },
 };

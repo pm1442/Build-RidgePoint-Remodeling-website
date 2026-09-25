@@ -7,7 +7,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="shell footer-grid">
         <div>
-          <Link className="footer-brand" href="/" aria-label="RidgePoint home"><Image src="/images/ridgepoint-remodeling-logo-official.png" alt="RidgePoint Remodeling & Carpentry" width={820} height={225} sizes="260px" /></Link>
+          <Link className="footer-brand" href="/" aria-label="Ridge Point home"><Image src="/images/ridgepoint-remodeling-logo-official.png" alt="Ridge Point Remodeling & Carpentry" width={820} height={225} sizes="260px" /></Link>
           <p>Based in Lake Butler, serving nearby North Florida communities within roughly a 60-minute drive.</p>
         </div>
         <div>
@@ -26,7 +26,7 @@ export function SiteFooter() {
       </div>
       <div className="footer-bottom">
         <div className="shell footer-bottom-inner">
-          <span>© {new Date().getFullYear()} RidgePoint Remodeling & Carpentry. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Ridge Point Remodeling & Carpentry. All rights reserved.</span>
           <span>Website design and hosting by <a href="https://www.palmtec.biz" target="_blank" rel="noreferrer">PalmTec LLC</a>.</span>
         </div>
       </div>

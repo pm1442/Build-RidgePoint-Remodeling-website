@@ -9,7 +9,7 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }) {
   const service = getService(params.slug);
-  return service ? { title: `${service.name} in Lake Butler, FL`, description: `${service.summary} RidgePoint serves homeowners across nearby North Florida communities.`, alternates: { canonical: `/services/${service.slug}` } } : {};
+  return service ? { title: `${service.name} in Lake Butler, FL`, description: `${service.summary} Ridge Point serves homeowners across nearby North Florida communities.`, alternates: { canonical: `/services/${service.slug}` } } : {};
 }
 
 export default function ServicePage({ params }) {

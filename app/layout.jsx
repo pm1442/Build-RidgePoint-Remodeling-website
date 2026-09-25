@@ -5,16 +5,16 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ridgepointremodelin
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "RidgePoint Remodeling & Carpentry | Lake Butler, FL",
-    template: "%s | RidgePoint Remodeling & Carpentry",
+    default: "Ridge Point Remodeling & Carpentry | Lake Butler, FL",
+    template: "%s | Ridge Point Remodeling & Carpentry",
   },
   description:
     "Kitchen, bath, cabinetry, carpentry, deck, siding, window, and flooring work for homeowners in Lake Butler and nearby North Florida communities.",
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "RidgePoint Remodeling & Carpentry",
-    images: [{ url: "/images/ridgepoint-social-share.jpg", width: 1200, height: 630, alt: "Covered porch and exterior renovation by RidgePoint Remodeling & Carpentry" }],
+    siteName: "Ridge Point Remodeling & Carpentry",
+    images: [{ url: "/images/ridgepoint-social-share.jpg", width: 1200, height: 630, alt: "Covered porch and exterior renovation by Ridge Point Remodeling & Carpentry" }],
   },
   twitter: { card: "summary_large_image", images: ["/images/ridgepoint-social-share.jpg"] },
 };

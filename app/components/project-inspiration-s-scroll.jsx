@@ -68,7 +68,7 @@ export function ProjectInspirationSScroll({ images }) {
   return (
     <section
       className={`project-inspiration-train${hasMotion ? "" : " is-static"}`}
-      aria-label="RidgePoint project inspiration gallery"
+      aria-label="Ridge Point project inspiration gallery"
       ref={galleryRef}
       style={{ "--train-scroll-distance": `${travelDistance}px` }}
     >

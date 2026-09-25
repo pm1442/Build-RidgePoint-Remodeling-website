@@ -23,7 +23,7 @@ export default function ServicesPage() {
         <div className="services-directory-intro">
           <p className="eyebrow">Explore the work</p>
           <h1 id="services-directory-heading">What needs attention?</h1>
-          <p>Start with the room, repair, or outdoor space you want to improve. Each service page outlines the work RidgePoint can discuss and answers common questions before you reach out.</p>
+          <p>Start with the room, repair, or outdoor space you want to improve. Each service page outlines the work Ridge Point can discuss and answers common questions before you reach out.</p>
         </div>
         <div className="services-directory-grid">
           {services.map((service, index) => {

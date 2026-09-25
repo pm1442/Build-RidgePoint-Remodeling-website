@@ -12,10 +12,10 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "RidgePoint Remodeling & Carpentry",
-    title: "RidgePoint Remodeling & Carpentry | Lake Butler, FL",
+    siteName: "Ridge Point Remodeling & Carpentry",
+    title: "Ridge Point Remodeling & Carpentry | Lake Butler, FL",
     description: "Kitchen, bath, cabinetry, carpentry, deck, siding, window, and flooring work for homeowners in Lake Butler and nearby North Florida communities.",
-    images: [{ url: "/images/ridgepoint-social-share.jpg", width: 1200, height: 630, alt: "Covered porch and exterior renovation by RidgePoint Remodeling & Carpentry" }],
+    images: [{ url: "/images/ridgepoint-social-share.jpg", width: 1200, height: 630, alt: "Covered porch and exterior renovation by Ridge Point Remodeling & Carpentry" }],
   },
   twitter: { card: "summary_large_image", images: ["/images/ridgepoint-social-share.jpg"] },
 };
@@ -48,7 +48,7 @@ export default function HomePage() {
             <Link className="popular-service-card popular-service-card-cabinets" href="/services/cabinet-sales-installation">
               <Image src="/images/rpr-cabinet-sales-installation-clean.png" fill sizes="(max-width: 820px) 100vw, 42vw" alt="Finished white kitchen with black pendant lighting, custom cabinetry, and a central island" />
               <span className="popular-service-scrim" />
-              <span className="popular-service-content"><strong>Cabinet Sales and Installation</strong><span>Choose new cabinets for your space, with professional installation from RidgePoint.</span></span>
+              <span className="popular-service-content"><strong>Cabinet Sales and Installation</strong><span>Choose new cabinets for your space, with professional installation from Ridge Point.</span></span>
             </Link>
             <article className="popular-service-card popular-service-card-renovations">
               <Image className="popular-service-image-bathroom" src="/images/rpr-kitchen-bath-popular-service.png" fill sizes="(max-width: 820px) 100vw, 33vw" alt="Finished bathroom remodel with a black vanity, double mirrored cabinets, and black tile flooring" />
@@ -68,12 +68,12 @@ export default function HomePage() {
       <section className="section section-owner">
         <div className="shell owner-grid">
           <div className="owner-image">
-            <Image src="/images/jason-miller-ridgepoint-remodeling.png" alt="Jason Miller, owner of RidgePoint Remodeling & Carpentry" fill sizes="(max-width: 820px) 100vw, 42vw" />
+            <Image src="/images/jason-miller-ridgepoint-remodeling.png" alt="Jason Miller, owner of Ridge Point Remodeling & Carpentry" fill sizes="(max-width: 820px) 100vw, 42vw" />
           </div>
           <div className="owner-copy">
             <p className="eyebrow">Meet Jason Miller</p>
             <h2>Clear answers from the person leading the work.</h2>
-            <p>Jason listens first, then helps you understand the practical options for your home. RidgePoint Remodeling & Carpentry is licensed and insured. Florida License #CRC1335692.</p>
+            <p>Jason listens first, then helps you understand the practical options for your home. Ridge Point Remodeling & Carpentry is licensed and insured. Florida License #CRC1335692.</p>
             <Link className="text-link" href="/about">About Us</Link>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function HomePage() {
       <section className="section section-soft">
         <div className="shell faq-grid">
           <div>
-            <p className="eyebrow">Working with RidgePoint</p>
+            <p className="eyebrow">Working with Ridge Point</p>
             <h2>Clear answers before work begins.</h2>
             <p className="section-copy">Licensed and insured. Florida License #CRC1335692. Practical guidance for homeowners who want to know what comes next.</p>
           </div>
@@ -125,7 +125,7 @@ export default function HomePage() {
           <Link className="text-link" href="/areas-we-serve">Explore the service area</Link>
         </div>
         <div className="service-area-map">
-          <iframe title="Map centered on RidgePoint Remodeling & Carpentry in Lake Butler, Florida" src="https://www.google.com/maps?q=8831%20SW%2088th%20Ct%2C%20Lake%20Butler%2C%20FL%2032054&z=9&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+          <iframe title="Map centered on Ridge Point Remodeling & Carpentry in Lake Butler, Florida" src="https://www.google.com/maps?q=8831%20SW%2088th%20Ct%2C%20Lake%20Butler%2C%20FL%2032054&z=9&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
         </div>
       </section>
 
