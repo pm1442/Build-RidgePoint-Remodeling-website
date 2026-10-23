@@ -48,5 +48,29 @@ export function QuoteForm() {
     }
   }
 
-  return <form className="quote-form" onSubmit={handleSubmit}><label>Project type<select name="projectType" defaultValue=""><option value="">I am not sure yet</option>{services.map((service) => <option key={service.slug}>{service.name}</option>)}</select></label><label>Your name<input name="name" autoComplete="name" required /></label><label>Best phone or email<input name="contact" autoComplete="email" required /></label><label>Property city or address <span>(optional)</span><input name="propertyLocation" autoComplete="street-address" /></label><label>What would you like to improve?<textarea name="details" rows="5" required /></label><button className="button" type="submit" disabled={submitting}>{submitting ? "Sending..." : "Start the conversation"}</button><p className="form-note">Your information goes directly to Ridge Point so Jason can follow up. You can also call {site.phoneDisplay}.</p><p className="form-note">Please review our <a href="/privacy-policy">Privacy Policy</a> before sending your information.</p>{error && <p className="form-success" role="alert">{error}</p>}{sent && <p className="form-success" role="status">Thank you. You do not have to have every decision figured out before you start. Jason has your details and will be in touch to talk through what is not working and a practical next step for your home.</p>}</form>;
+  if (sent) {
+    return <section className="quote-success" role="status" aria-live="polite">
+      <p className="eyebrow">You are on your way</p>
+      <h3>That is one thing off your mind.</h3>
+      <p className="quote-success-lead">Your request is with Ridge Point. Jason will look over what you shared and reach out to talk it through.</p>
+      <ol>
+        <li><strong>You set the priorities.</strong> Tell us what matters most, even if you are still sorting it out.</li>
+        <li><strong>We help make a plan.</strong> Jason will talk through what is realistic for your home and your budget.</li>
+        <li><strong>You decide the next step.</strong> There is no pressure to have every answer today.</li>
+      </ol>
+      <p className="quote-success-callout">Want to talk sooner? Call <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>.</p>
+    </section>;
+  }
+
+  return <form className="quote-form" onSubmit={handleSubmit}>
+    <label>Project type<select name="projectType" defaultValue=""><option value="">I am not sure yet</option>{services.map((service) => <option key={service.slug}>{service.name}</option>)}</select></label>
+    <label>Your name<input name="name" autoComplete="name" required /></label>
+    <label>Best phone or email<input name="contact" autoComplete="email" required /></label>
+    <label>Property city or address <span>(optional)</span><input name="propertyLocation" autoComplete="street-address" /></label>
+    <label>What would you like to improve?<textarea name="details" rows="5" required /></label>
+    <button className="button" type="submit" disabled={submitting}>{submitting ? "Sending..." : "Start the conversation"}</button>
+    <p className="form-note">Your information goes directly to Ridge Point so Jason can follow up. You can also call {site.phoneDisplay}.</p>
+    <p className="form-note">Please review our <a href="/privacy-policy">Privacy Policy</a> before sending your information.</p>
+    {error && <p className="form-success" role="alert">{error}</p>}
+  </form>;
 }
