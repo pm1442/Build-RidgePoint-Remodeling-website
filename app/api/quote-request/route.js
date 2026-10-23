@@ -86,19 +86,23 @@ export async function POST(request) {
   const contactId = response?.contact?.id;
 
   if (contactId) {
-    const tagResponse = await fetch(`https://services.leadconnectorhq.com/contacts/${contactId}/tags`, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json",
-        Version: "2021-07-28",
-      },
-      body: JSON.stringify({ tags: ["Website Lead"] }),
-    });
+    try {
+      const tagResponse = await fetch(`https://services.leadconnectorhq.com/contacts/${contactId}/tags`, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+          Version: "2021-07-28",
+        },
+        body: JSON.stringify({ tags: ["Website Lead"] }),
+      });
 
-    if (!tagResponse.ok) {
-      console.error("GHL Website Lead tag failed", tagResponse.status, await tagResponse.text());
+      if (!tagResponse.ok) {
+        console.error("GHL Website Lead tag failed", tagResponse.status, await tagResponse.text());
+      }
+    } catch (error) {
+      console.error("GHL Website Lead tag request could not be reached", error);
     }
   }
 
