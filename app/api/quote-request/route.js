@@ -76,12 +76,15 @@ export async function POST(request) {
     return Response.json({ error: "We could not send your request just now. Please call (386) 291-5200.", reference: `CRM-${ghlResponse.status}` }, { status: 502 });
   }
 
-  let response;
+  let response = null;
   try {
-    response = await ghlResponse.json();
+    const responseText = await ghlResponse.text();
+    response = responseText ? JSON.parse(responseText) : null;
   } catch (error) {
-    console.error("GHL returned an unreadable contact response", error);
-    return Response.json({ error: "We could not send your request just now. Please call (386) 291-5200.", reference: "CRM-RESPONSE" }, { status: 502 });
+    // GHL has already accepted the contact when this point is reached. A
+    // malformed or empty response must not make the homeowner think the
+    // request was lost.
+    console.error("GHL returned an unreadable contact response after accepting the contact", error);
   }
   const contactId = response?.contact?.id;
 
