@@ -25,7 +25,8 @@ export function QuoteForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: data.get("name"),
-          contact: data.get("contact"),
+          email: data.get("email"),
+          phone: data.get("phone"),
           projectType: data.get("projectType"),
           propertyLocation: data.get("propertyLocation"),
           details: data.get("details"),
@@ -65,7 +66,8 @@ export function QuoteForm() {
   return <form className="quote-form" onSubmit={handleSubmit}>
     <label>Project type<select name="projectType" defaultValue=""><option value="">I am not sure yet</option>{services.map((service) => <option key={service.slug}>{service.name}</option>)}</select></label>
     <label>Your name<input name="name" autoComplete="name" required /></label>
-    <label>Best phone or email<input name="contact" autoComplete="email" required /></label>
+    <label>Email address<input name="email" type="email" autoComplete="email" required /></label>
+    <label>Best phone number<input name="phone" type="tel" autoComplete="tel" inputMode="tel" required /></label>
     <label>Property city or address <span>(optional)</span><input name="propertyLocation" autoComplete="street-address" /></label>
     <label>What would you like to improve?<textarea name="details" rows="5" required /></label>
     <button className="button" type="submit" disabled={submitting}>{submitting ? "Sending..." : "Start the conversation"}</button>

@@ -30,17 +30,21 @@ export async function POST(request) {
   }
 
   const name = text(input.name);
-  const contact = text(input.contact);
+  const email = text(input.email);
+  const phone = text(input.phone);
   const projectType = text(input.projectType) || "Not Sure Yet";
   const propertyLocation = text(input.propertyLocation);
   const details = text(input.details);
 
-  if (!name || !contact || !details) {
-    return Response.json({ error: "Please complete your name, contact information, and project details." }, { status: 400 });
+  if (!name || !email || !phone || !details) {
+    return Response.json({ error: "Please complete your name, email, phone number, and project details." }, { status: 400 });
+  }
+
+  if (!isEmail(email)) {
+    return Response.json({ error: "Please enter a valid email address." }, { status: 400 });
   }
 
   const { firstName, lastName } = splitName(name);
-  const contactDetails = isEmail(contact) ? { email: contact } : { phone: contact };
 
   let ghlResponse;
   try {
@@ -58,7 +62,8 @@ export async function POST(request) {
         name,
         locationId,
         source: "Website quote form",
-        ...contactDetails,
+        email,
+        phone,
         customFields: [
           { key: "project_type", fieldValue: projectType },
           { key: "project_details", fieldValue: details },
