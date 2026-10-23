@@ -19,7 +19,7 @@ export async function POST(request) {
 
   if (!token || !locationId) {
     console.error("GHL form connection is missing its server environment variables.");
-    return Response.json({ error: "The form is temporarily unavailable. Please call (386) 291-5200." }, { status: 503 });
+    return Response.json({ error: "The form is temporarily unavailable. Please call (386) 291-5200.", reference: "CRM-CONFIG" }, { status: 503 });
   }
 
   let input;
@@ -67,7 +67,7 @@ export async function POST(request) {
 
   if (!ghlResponse.ok) {
     console.error("GHL contact upsert failed", ghlResponse.status, await ghlResponse.text());
-    return Response.json({ error: "We could not send your request just now. Please call (386) 291-5200." }, { status: 502 });
+    return Response.json({ error: "We could not send your request just now. Please call (386) 291-5200.", reference: `CRM-${ghlResponse.status}` }, { status: 502 });
   }
 
   const response = await ghlResponse.json();

@@ -31,7 +31,8 @@ export function QuoteForm() {
       const result = await response.json().catch(() => ({}));
 
       if (!response.ok) {
-        setError(result.error || `We could not send your request. Please call ${site.phoneDisplay}.`);
+        const reference = result.reference ? ` Reference: ${result.reference}.` : "";
+        setError(`${result.error || `We could not send your request. Please call ${site.phoneDisplay}.`}${reference}`);
         return;
       }
 
