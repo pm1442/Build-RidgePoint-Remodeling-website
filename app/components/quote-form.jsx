@@ -14,7 +14,11 @@ export function QuoteForm() {
     setSent(false);
     setSubmitting(true);
 
-    const data = new FormData(event.currentTarget);
+    // Keep the form element before awaiting the request. React clears
+    // event.currentTarget after the async boundary, which otherwise turns a
+    // successful submission into a false error when we reset the form.
+    const form = event.currentTarget;
+    const data = new FormData(form);
     try {
       const response = await fetch("/api/quote-request", {
         method: "POST",
@@ -35,7 +39,7 @@ export function QuoteForm() {
         return;
       }
 
-      event.currentTarget.reset();
+      form.reset();
       setSent(true);
     } catch {
       setError(`We could not send your request. Please call ${site.phoneDisplay}.`);
