@@ -42,35 +42,47 @@ export async function POST(request) {
   const { firstName, lastName } = splitName(name);
   const contactDetails = isEmail(contact) ? { email: contact } : { phone: contact };
 
-  const ghlResponse = await fetch(GHL_CONTACTS_URL, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      Authorization: `Bearer ${token}`,
-      "Content-Type": "application/json",
-      Version: "2021-07-28",
-    },
-    body: JSON.stringify({
-      firstName,
-      lastName,
-      name,
-      locationId,
-      source: "Website quote form",
-      ...contactDetails,
-      customFields: [
-        { key: "project_type", fieldValue: projectType },
-        { key: "project_details", fieldValue: details },
-        ...(propertyLocation ? [{ key: "property_city_or_address", fieldValue: propertyLocation }] : []),
-      ],
-    }),
-  });
+  let ghlResponse;
+  try {
+    ghlResponse = await fetch(GHL_CONTACTS_URL, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+        Version: "2021-07-28",
+      },
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        name,
+        locationId,
+        source: "Website quote form",
+        ...contactDetails,
+        customFields: [
+          { key: "project_type", fieldValue: projectType },
+          { key: "project_details", fieldValue: details },
+          ...(propertyLocation ? [{ key: "property_city_or_address", fieldValue: propertyLocation }] : []),
+        ],
+      }),
+    });
+  } catch (error) {
+    console.error("GHL contact request could not be reached", error);
+    return Response.json({ error: "We could not send your request just now. Please call (386) 291-5200.", reference: "CRM-CONNECTION" }, { status: 502 });
+  }
 
   if (!ghlResponse.ok) {
     console.error("GHL contact upsert failed", ghlResponse.status, await ghlResponse.text());
     return Response.json({ error: "We could not send your request just now. Please call (386) 291-5200.", reference: `CRM-${ghlResponse.status}` }, { status: 502 });
   }
 
-  const response = await ghlResponse.json();
+  let response;
+  try {
+    response = await ghlResponse.json();
+  } catch (error) {
+    console.error("GHL returned an unreadable contact response", error);
+    return Response.json({ error: "We could not send your request just now. Please call (386) 291-5200.", reference: "CRM-RESPONSE" }, { status: 502 });
+  }
   const contactId = response?.contact?.id;
 
   if (contactId) {
