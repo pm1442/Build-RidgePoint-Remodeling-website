@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PageFrame } from "./components/page-frame";
+import { ReviewSection } from "./components/review-section";
 import { SiteSchema } from "./components/site-schema";
 import { faqs, processSteps, services, site } from "./lib/site-data";
 
@@ -32,8 +33,8 @@ export default function HomePage() {
           <h1><span className="hero-title-desktop">Lake Butler Remodeling Contractor for Kitchens, Baths &amp; Custom Carpentry</span><span className="hero-title-mobile">Lake Butler Kitchen, Bath &amp; Carpentry Contractor</span></h1>
           <p className="hero-copy"><span className="hero-copy-desktop">Get a practical plan for the parts of your home that no longer work, from kitchens and baths to cabinetry, decks, siding, windows, and finish carpentry. Based in Lake Butler and serving nearby North Florida communities within about an hour&apos;s drive.</span><span className="hero-copy-mobile">Kitchens, baths, cabinetry, decks, siding, windows, and finish carpentry in Lake Butler.</span></p>
           <div className="hero-actions">
-            <Link className="button" href="/projects#projects-top">View Our Projects</Link>
-            <a className="button button-quiet" href={`tel:${site.phone}`}>Call {site.phoneDisplay}</a>
+            <Link className="button" href="/contact">Request a Free Estimate</Link>
+            <Link className="button button-quiet" href="/projects#projects-top">View Our Projects</Link>
           </div>
         </div>
       </section>
@@ -79,6 +80,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <ReviewSection />
 
       <section className="section section-soft process-section">
         <div className="shell">

@@ -47,6 +47,13 @@ export default function ServicesPage() {
             );
           })}
         </div>
+        <div className="services-directory-cta">
+          <div>
+            <h2>Not sure which service fits?</h2>
+            <p>Tell Jason what is not working. He can help you sort out the practical next step.</p>
+          </div>
+          <Link className="button" href="/contact">Request a Free Estimate</Link>
+        </div>
       </section>
     </PageFrame>
   );
