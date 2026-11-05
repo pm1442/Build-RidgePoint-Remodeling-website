@@ -1,12 +1,14 @@
 import { PageFrame } from "../components/page-frame";
 import { QuoteForm } from "../components/quote-form";
 import { site } from "../lib/site-data";
+import { pageUrl } from "../lib/seo";
 
 export const metadata = {
   title: "Request a Quote",
   description: "Request a quote for remodeling, carpentry, cabinets, decks, siding, windows, and home updates in Lake Butler and nearby North Florida communities.",
   alternates: { canonical: "/contact" },
   openGraph: {
+    url: pageUrl("/contact"),
     type: "website",
     locale: "en_US",
     siteName: "Ridge Point Remodeling & Carpentry",

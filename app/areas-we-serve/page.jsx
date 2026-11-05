@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { PageFrame } from "../components/page-frame";
 import { site } from "../lib/site-data";
+import { pageUrl } from "../lib/seo";
 
 export const metadata = {
   title: "Lake Butler Remodeling Contractor Serving Nearby North Florida",
   description: "Ridge Point Remodeling & Carpentry is based in Lake Butler and serves homeowners within roughly a 60-minute drive across nearby North Florida communities.",
   alternates: { canonical: "/areas-we-serve" },
+  openGraph: { url: pageUrl("/areas-we-serve") },
 };
 
 const localAnswers = [

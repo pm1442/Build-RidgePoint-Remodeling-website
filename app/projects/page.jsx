@@ -3,12 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { ProjectGalleryGrid } from "../components/project-gallery-grid";
 import galleries from "../../content/projects.json";
+import { pageUrl } from "../lib/seo";
 
 export const metadata = {
   title: "Our Remodeling & Carpentry Projects | Lake Butler, FL",
   description: "See real kitchen, bathroom, carpentry, deck, siding, and window projects completed by Ridge Point Remodeling & Carpentry in Lake Butler and nearby North Florida communities.",
   alternates: { canonical: "/projects" },
   openGraph: {
+    url: pageUrl("/projects"),
     type: "website",
     locale: "en_US",
     siteName: "Ridge Point Remodeling & Carpentry",

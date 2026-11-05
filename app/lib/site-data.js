@@ -14,7 +14,7 @@ export const site = {
     closes: "17:00",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
   },
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://ridgepointremodeling.com",
+  url: "https://ridgepointremodeling.com",
   serviceAreaSummary: "Based in Lake Butler, Florida, Ridge Point Remodeling & Carpentry serves homeowners within roughly a 60-minute drive, including Starke, Lake City, Gainesville, High Springs, Alachua, Macclenny, Live Oak, Keystone Heights, and nearby rural communities. Availability varies by project scope and schedule.",
   cities: [
     "Lake Butler",

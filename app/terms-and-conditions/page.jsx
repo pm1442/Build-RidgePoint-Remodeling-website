@@ -1,10 +1,12 @@
 import { PageFrame } from "../components/page-frame";
 import { site } from "../lib/site-data";
+import { pageUrl } from "../lib/seo";
 
 export const metadata = {
   title: "Terms and Conditions",
   description: "Terms and Conditions for Ridge Point Remodeling & Carpentry.",
   alternates: { canonical: "/terms-and-conditions" },
+  openGraph: { url: pageUrl("/terms-and-conditions") },
 };
 
 export default function TermsAndConditionsPage() {

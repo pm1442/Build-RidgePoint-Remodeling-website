@@ -1,10 +1,12 @@
 import { PageFrame } from "../components/page-frame";
 import { site } from "../lib/site-data";
+import { pageUrl } from "../lib/seo";
 
 export const metadata = {
   title: "Privacy Policy",
   description: "Privacy Policy for Ridge Point Remodeling & Carpentry.",
   alternates: { canonical: "/privacy-policy" },
+  openGraph: { url: pageUrl("/privacy-policy") },
 };
 
 export default function PrivacyPolicyPage() {

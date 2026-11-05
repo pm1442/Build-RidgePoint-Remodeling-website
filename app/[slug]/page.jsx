@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageFrame } from "../components/page-frame";
 import { services, site } from "../lib/site-data";
+import { pageUrl } from "../lib/seo";
 
 const pages = {
   "remodeling-contractor-lake-butler-fl": {
@@ -36,20 +37,23 @@ const pages = {
 
 export function generateStaticParams() { return Object.keys(pages).map((slug) => ({ slug })); }
 
-export function generateMetadata({ params }) {
-  const page = pages[params.slug];
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const page = pages[slug];
   return page ? {
     title: page.title,
     description: page.description,
-    robots: { index: false, follow: true },
+    alternates: { canonical: `/${slug}` },
+    openGraph: { url: pageUrl(`/${slug}`) },
   } : {};
 }
 
-export default function LocalLandingPage({ params }) {
-  const page = pages[params.slug];
+export default async function LocalLandingPage({ params }) {
+  const { slug } = await params;
+  const page = pages[slug];
   if (!page) notFound();
   const relevantServices = page.service === "Deck Building" ? services.filter((service) => service.slug === "deck-building") : services.filter((service) => ["kitchen-remodeling", "bathroom-remodeling", "cabinet-sales-installation", "custom-carpentry"].includes(service.slug));
-  const schema = { "@context": "https://schema.org", "@type": "Service", name: `${page.service} in ${page.city}, FL`, description: page.description, provider: { "@id": `${site.url}/#business` }, areaServed: { "@type": "City", name: page.city }, url: `${site.url}/${params.slug}/` };
+  const schema = { "@context": "https://schema.org", "@type": "Service", name: `${page.service} in ${page.city}, FL`, description: page.description, provider: { "@id": `${site.url}/#business` }, areaServed: { "@type": "City", name: page.city }, url: pageUrl(`/${slug}`) };
 
   return <PageFrame><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} /><section className="page-hero shell"><p className="eyebrow">{page.city}, Florida</p><h1>{page.title}</h1><p>{page.description}</p><Link className="button" href="/contact">Request a Quote</Link></section><section className="section shell intro-grid"><div><p className="eyebrow">How Ridge Point can help</p><h2>Start with a practical plan for your home.</h2></div><div className="intro-copy"><p>Every project begins by discussing the existing space, the work you want done, the materials involved, and timing. Ridge Point will help you determine whether the project is a fit and what the next step should be.</p><ul className="detail-list">{page.focus.map((item) => <li key={item}>{item}</li>)}</ul></div></section><section className="section section-soft"><div className="shell faq-grid"><div><p className="eyebrow">Service options</p><h2>Explore the work you are planning.</h2></div><div className="local-service-links">{relevantServices.map((service) => <Link href={`/services/${service.slug}`} key={service.slug}><strong>{service.name}</strong><span>{service.summary}</span></Link>)}</div></div></section><section className="quote-band"><div className="shell quote-band-inner"><div><p className="eyebrow">Talk through the details</p><h2>Have a {page.city} project in mind?</h2></div><a className="button button-light" href={`tel:${site.phone}`}>Call {site.phoneDisplay}</a></div></section></PageFrame>;
 }

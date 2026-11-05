@@ -1,17 +1,10 @@
-import { site } from "./lib/site-data";
+import { canonicalOrigin } from "./lib/seo";
 
 export default function robots() {
   return {
     rules: [
       { userAgent: "*", allow: "/", disallow: ["/admin", "/api/"] },
-      { userAgent: "Googlebot", allow: "/" },
-      { userAgent: "Googlebot-Image", allow: "/" },
-      { userAgent: "OAI-SearchBot", allow: "/" },
-      { userAgent: "ChatGPT-User", allow: "/" },
-      { userAgent: "GPTBot", allow: "/" },
-      { userAgent: "ClaudeBot", allow: "/" },
-      { userAgent: "PerplexityBot", allow: "/" },
     ],
-    sitemap: `${site.url}/sitemap.xml`,
+    sitemap: `${canonicalOrigin}/sitemap.xml`,
   };
 }

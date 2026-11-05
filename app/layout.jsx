@@ -1,9 +1,8 @@
 import "./globals.css";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ridgepointremodeling.com";
+import { canonicalOrigin, pageUrl } from "./lib/seo";
 
 export const metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(canonicalOrigin),
   title: {
     default: "Ridge Point Remodeling & Carpentry | Lake Butler, FL",
     template: "%s | Ridge Point Remodeling & Carpentry",
@@ -11,6 +10,7 @@ export const metadata = {
   description:
     "Kitchen, bath, cabinetry, carpentry, deck, siding, window, and flooring work for homeowners in Lake Butler and nearby North Florida communities.",
   openGraph: {
+    url: pageUrl("/"),
     type: "website",
     locale: "en_US",
     siteName: "Ridge Point Remodeling & Carpentry",

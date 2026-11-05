@@ -2,8 +2,9 @@ import { PageFrame } from "../components/page-frame";
 import { services } from "../lib/site-data";
 import Image from "next/image";
 import Link from "next/link";
+import { pageUrl } from "../lib/seo";
 
-export const metadata = { title: "Remodeling and Carpentry Services", description: "Kitchen, bathroom, cabinetry, custom carpentry, deck, siding, window, and flooring services for homeowners in Lake Butler and nearby North Florida communities.", alternates: { canonical: "/services" } };
+export const metadata = { title: "Remodeling and Carpentry Services", description: "Kitchen, bathroom, cabinetry, custom carpentry, deck, siding, window, and flooring services for homeowners in Lake Butler and nearby North Florida communities.", alternates: { canonical: "/services" }, openGraph: { url: pageUrl("/services") } };
 
 const serviceImages = {
   "kitchen-remodeling": { src: "/images/kitchen-remodel-before-after.png", alt: "Before and after kitchen remodel with white cabinets and a marble-look island" },

@@ -4,6 +4,7 @@ import { PageFrame } from "./components/page-frame";
 import { ReviewSection } from "./components/review-section";
 import { SiteSchema } from "./components/site-schema";
 import { faqs, processSteps, services, site } from "./lib/site-data";
+import { pageUrl } from "./lib/seo";
 
 const serviceImages = ["/images/kitchen-remodel-before-after.png", "/images/rpr-lake-butler-bathroom-remodel.png", "/images/rpr-cabinet-sales-installation-clean.png", "/images/rpr-custom-carpentry-trim.jpg", "/images/rpr-outdoor-deck.jpg", "/images/rpr-flooring-siding-windows.jpg"];
 const serviceCardNames = { "deck-building": "Outdoor Decks" };
@@ -11,6 +12,7 @@ const serviceCardNames = { "deck-building": "Outdoor Decks" };
 export const metadata = {
   alternates: { canonical: "/" },
   openGraph: {
+    url: pageUrl("/"),
     type: "website",
     locale: "en_US",
     siteName: "Ridge Point Remodeling & Carpentry",
