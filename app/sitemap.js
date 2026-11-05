@@ -9,6 +9,5 @@ export default function sitemap() {
   return [
     ...staticPages.map((path) => ({ url: `${site.url}${path}`, lastModified })),
     ...services.map((service) => ({ url: `${site.url}/services/${service.slug}`, lastModified })),
-    ...site.locationPages.map((page) => ({ url: `${site.url}/${page.slug}`, lastModified })),
   ];
 }
