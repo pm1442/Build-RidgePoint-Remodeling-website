@@ -45,7 +45,12 @@ export const services = [
       { title: "The right scope for your home", text: "The current kitchen, your household routines, and the changes that matter most will help shape a practical path forward." },
     ],
     pageIntro: "A kitchen remodel should solve the everyday problems you notice most: not enough storage, an awkward layout, worn finishes, or a room that no longer fits the way your household lives. Ridge Point helps homeowners plan kitchen improvements around practical use, materials, and the finish details that make the room feel complete.",
-    planningPoints: ["What is not working in the current kitchen", "Which changes will make the biggest daily difference", "How cabinetry, trim, and finishes need to work together"],
+    planningHeading: "Plan around the way your kitchen actually works.",
+    planningPoints: [
+      { title: "The daily friction you want to solve", text: "Start with the moments that feel cramped, inconvenient, or worn out. Those details help identify the improvements that will matter most." },
+      { title: "A focused update or a larger remodel", text: "You can begin with cabinetry, storage, finishes, or the layout. Jason can help you talk through a scope that fits the room and your priorities." },
+      { title: "How the finished pieces work together", text: "Cabinets, counters, appliances, trim, and finish details need to function as one room, not as a set of separate decisions." },
+    ],
     serviceFaqs: [
       { question: "Can I improve my kitchen without changing everything?", answer: "Yes. Start by identifying the parts of the kitchen that are creating the most friction. Ridge Point can talk through a focused scope or a more complete remodel based on the room, your priorities, and the result you want." },
       { question: "Can Ridge Point help with kitchen cabinets?", answer: "Yes. Ridge Point can help you choose new cabinets and provide professional installation as part of a kitchen project." },
@@ -67,7 +72,12 @@ export const services = [
       { title: "The right scope for your home", text: "The condition of the existing bathroom, the changes you want most, and your priorities for the finished space help shape the plan." },
     ],
     pageIntro: "Bathroom work can range from a focused update to a more complete renovation. Ridge Point helps you talk through the condition of the room, the changes you want to make, and the finish decisions that help the space feel comfortable, functional, and easier to maintain.",
-    planningPoints: ["The condition of the existing bathroom", "Storage, lighting, and fixture priorities", "The right scope for the room and your goals"],
+    planningHeading: "Make the bathroom easier to use every day.",
+    planningPoints: [
+      { title: "What feels worn, awkward, or hard to maintain", text: "Notice the parts of the room that no longer work well for your routine. That gives the conversation a useful, practical starting point." },
+      { title: "Your storage, lighting, and fixture priorities", text: "A vanity, shower or tub area, lighting, and storage can each change how the room feels. You do not need every finish selected before you reach out." },
+      { title: "The right scope for your home", text: "A focused update and a full remodel can both make sense. The room condition and the outcome you want help determine the right path." },
+    ],
     serviceFaqs: [
       { question: "Can Ridge Point handle a small bathroom update or does it need to be a full remodel?", answer: "Ridge Point discusses both focused bathroom updates and more complete renovations. Share the current condition of the room and the changes you have in mind so Jason can confirm whether the scope is a fit." },
       { question: "Can I keep my existing bathroom layout and still make a meaningful change?", answer: "Often, yes. Updates to cabinetry, tile, shower or tub areas, fixtures, and lighting can change how the room feels and functions without starting from a blank slate. Jason can talk through what makes sense for your bathroom." },
@@ -91,7 +101,12 @@ export const services = [
       { title: "A fit shaped around your space", text: "Room dimensions, storage goals, door swings, appliances, and the finish details around the cabinetry all help shape the right plan." },
     ],
     pageIntro: "Ridge Point helps homeowners obtain new cabinets that fit their space, storage needs, style, and budget, then provides professional installation for a well-coordinated result. The right plan starts with your room, your timeline, and the way you want the finished space to work every day.",
-    planningPoints: ["Cabinet options that fit the room and budget", "Professional installation from careful measuring through finish details", "Storage and layout priorities for the room"],
+    planningHeading: "Choose cabinets around the room, storage, and installation.",
+    planningPoints: [
+      { title: "The storage problem you want to solve", text: "Think about the items that do not have a useful home now, along with how the room needs to work on a normal day." },
+      { title: "Cabinet style, finish, and fit", text: "Your room, preferred look, budget, and practical needs help narrow down cabinet options without making the process feel overwhelming." },
+      { title: "Installation and surrounding details", text: "Careful measuring, delivery, installation, trim, and how the cabinets meet nearby finishes are all part of a well-coordinated result." },
+    ],
     serviceFaqs: [
       { question: "What cabinet brand does Ridge Point offer?", answer: "Ridge Point offers ForeverMark Cabinetry. Jason can help you compare available cabinet collections, door styles, finishes, and construction features around your room, project goals, and budget." },
       { question: "How do I choose cabinets that offer long-term value?", answer: "Start with the storage you need, the way the cabinets will fit the room, the door style and finish you prefer, and the construction features that matter to you. Jason can help you compare ForeverMark Cabinetry options around your project goals and budget." },
@@ -119,7 +134,12 @@ export const services = [
       { title: "The right fit for your existing home", text: "Existing finishes, room proportions, and the details you want to preserve all help shape a practical scope for the work." },
     ],
     pageIntro: "Finish carpentry is where a room starts to feel intentional. From trim around doors and windows to custom millwork and built-ins, Ridge Point focuses on the clean lines and practical details that help the rest of the work look finished.",
-    planningPoints: ["Which details will have the greatest visual impact", "How new trim needs to meet existing finishes", "Storage and built-in opportunities in the room"],
+    planningHeading: "Use finish carpentry to solve a real problem in the room.",
+    planningPoints: [
+      { title: "Where the room feels unfinished", text: "A blank wall, weak transition, or missing detail can often point to the trim, millwork, or built-in that will make the biggest difference." },
+      { title: "How the new work should meet your home", text: "Existing trim, paint, flooring, and room proportions guide the details so new work feels intentional rather than added on." },
+      { title: "Storage and built-in opportunities", text: "Built-ins can make an unused wall work harder while giving a room a more complete, organized feel." },
+    ],
     serviceFaqs: [
       { question: "What does custom carpentry include?", answer: "Ridge Point's custom carpentry work includes trim carpentry, crown molding, baseboards, door and window casing, custom millwork, and built-ins." },
       { question: "Can new trim work with the style and finishes already in my home?", answer: "That is an important part of the planning conversation. Jason can look at how new trim, millwork, or built-ins need to meet existing finishes and help identify the details that will have the strongest impact." },
@@ -144,7 +164,12 @@ export const services = [
       { title: "The right scope for your property", text: "Your yard, the home, the condition of any existing deck, and your priorities for the finished space help shape a practical path forward." },
     ],
     pageIntro: "A deck should give you a more useful place to spend time outside. Ridge Point helps homeowners think through the size, access, railings, stairs, and other practical details that shape how an outdoor space works with the home and yard.",
-    planningPoints: ["How you want to use the deck day to day", "Access, stairs, railings, and covered areas", "The condition of an existing deck if replacement is needed"],
+    planningHeading: "Plan an outdoor space around how you spend time outside.",
+    planningPoints: [
+      { title: "How you want to use the space", text: "Everyday outdoor time, a place to gather, access to the yard, and how the deck connects to the house all help define the project." },
+      { title: "Access, stairs, railings, and covered areas", text: "These details shape how the deck feels and how people move through it. A few photos and a simple description are enough to start." },
+      { title: "The condition of an existing deck", text: "If you are replacing a deck, share what you are seeing now and what you want to do differently in the finished space." },
+    ],
     serviceFaqs: [
       { question: "Does Ridge Point build new decks and replace existing decks?", answer: "Yes. Ridge Point discusses new deck construction and deck replacements, along with the practical elements that affect how the space works, including stairs, railings, and covered features." },
       { question: "What should I consider before planning a deck?", answer: "Think about how you want to use the outdoor space, where access should be, and whether stairs, railings, or covered areas are important. Photos of the yard or existing deck are helpful when you reach out." },
@@ -167,7 +192,12 @@ export const services = [
       { title: "The right scope for your home", text: "The existing materials, the areas you want to improve, and the way the work connects with other finish details all help shape a practical plan." },
     ],
     pageIntro: "Flooring, siding, and window updates can change how a home looks, feels, and functions. Ridge Point helps homeowners discuss the condition of the existing materials, the results they want, and how these improvements fit into the rest of the home.",
-    planningPoints: ["The condition and priorities of the existing materials", "Which improvements should be handled together", "How the work connects with interior or exterior finish details"],
+    planningHeading: "Prioritize the material or exterior issue affecting your home most.",
+    planningPoints: [
+      { title: "What you are noticing now", text: "Worn flooring, aging siding, or windows that no longer feel right can each have different priorities. Photos and a short description provide a strong starting point." },
+      { title: "What should be handled together", text: "Some updates make more sense when they are coordinated with nearby trim, paint, flooring, or exterior details. Jason can help you weigh the sequence." },
+      { title: "How the update should meet existing finishes", text: "The best result accounts for the materials around the work so the improvement feels considered and complete." },
+    ],
     serviceFaqs: [
       { question: "Can Ridge Point help with flooring, siding, and windows?", answer: "Yes. Ridge Point discusses flooring replacement, siding replacement, window replacement, related project planning, and the finish carpentry details that help the completed work come together." },
       { question: "How do I know if my windows may need replacement?", answer: "Difficulty opening or closing a window, visible damage, drafts, or moisture between panes are common reasons homeowners start the conversation. Share photos and what you are noticing so Ridge Point can discuss the condition and a practical next step." },

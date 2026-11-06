@@ -17,7 +17,7 @@ const reviews = [
 
 export function ReviewSection() {
   return (
-    <section className="section reviews-section" aria-labelledby="reviews-heading">
+    <section className="section reviews-section" id="reviews" aria-labelledby="reviews-heading">
       <div className="shell">
         <div className="reviews-heading">
           <div>

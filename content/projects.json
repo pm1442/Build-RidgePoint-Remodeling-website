@@ -1,10 +1,10 @@
 [
   {
     "id": "subfloor-repair-mufwafgz",
-    "service": "Subfloor Repair and Bathroom Renovation",
-    "title": "Subfloor Repair",
-    "location": "Lake Butler, Florida",
-    "description": "Structural subfloor repair and partial bathroom renovation, including removal of damaged materials, installation of new plywood subflooring, and preparation for updated finishes.",
+    "service": "Bathroom Renovation and Subfloor Repair",
+    "title": "Worthington Springs Subfloor Repair and Bathroom Update",
+    "location": "Worthington Springs, Florida",
+    "description": "Subfloor repair and partial bathroom renovation in Worthington Springs, including damaged-material removal, new plywood subfloor installation, and preparation for updated tile and wall finishes.",
     "images": [
       {
         "src": "/images/projects/subfloor-repair-mufwafgz-mufwafh0-1.jpg",
@@ -34,10 +34,10 @@
   },
   {
     "id": "stunning-makeover-mufvr4ub",
-    "service": "Kitchen Remodel",
-    "title": "Stunning Makeover",
+    "service": "Kitchen Remodeling",
+    "title": "Worthington Springs Kitchen Remodel",
     "location": "Worthington Springs, Florida",
-    "description": "Finished kitchen remodel with custom white cabinetry, crown molding, upgraded countertops, a large island, stainless-steel appliances, and a sliding barn door for a bright, functional layout",
+    "description": "Kitchen remodel in Worthington Springs with white cabinetry, crown molding, updated countertops, a large island, stainless-steel appliances, and a sliding barn door for a bright, functional layout.",
     "images": [
       {
         "src": "/images/projects/stunning-makeover-mufvr4ub-mufvr4ub-1.jpg",
@@ -71,8 +71,8 @@
   },
   {
     "id": "bright-bathroom-makeover-mufvhm0a",
-    "service": "Bath Remodel",
-    "title": "Bright Bathroom Makeover",
+    "service": "Bathroom Remodeling",
+    "title": "Lake Butler Bathroom Remodel",
     "location": "Lake Butler, Florida",
     "description": "Bathroom makeover with a new white tub and shower surround, recessed lighting, fresh wall finishes, beadboard detail, a modern vanity, and marble-look flooring for a clean, updated space.",
     "images": [
@@ -100,8 +100,8 @@
   },
   {
     "id": "new-kitchen-mufum6bf",
-    "service": "New Kitchen & Bath Build-outs",
-    "title": "Finished 2024",
+    "service": "New Home Interior Finish-Out",
+    "title": "Lake Butler Kitchen, Bath, and Interior Finish-Out",
     "location": "Lake Butler, Florida",
     "description": "Completed in 2024, this new Lake Butler home received a finished kitchen with white shaker cabinetry, quartz countertops, subway-tile backsplash, open wood shelving, black hardware, and practical storage for everyday use.",
     "images": [
@@ -217,8 +217,8 @@
   },
   {
     "id": "kitchen-makeover-with-custom-butcher-block-island-mufu02i9",
-    "service": "Major Cabinet Makeover",
-    "title": "Kitchen Makeover with Custom Butcher-Block Island",
+    "service": "Kitchen Remodeling and Custom Island",
+    "title": "Lake Butler Kitchen Makeover With Custom Butcher-Block Island",
     "location": "Lake Butler, Florida",
     "description": "Kitchen makeover with refreshed white cabinetry, beadboard detailing, updated countertops, open shelving, and a custom butcher-block island.",
     "images": [
@@ -270,10 +270,10 @@
   },
   {
     "id": "2023-ceiling-repair-mufts5tq",
-    "service": "Interior Home Remodel",
-    "title": "2023 - Ceiling Repair",
+    "service": "Ceiling Repair and Finish Carpentry",
+    "title": "Bell Ceiling Repair With Beadboard Finish",
     "location": "Bell, Florida",
-    "description": "Ceiling repair and finish upgrade with beadboard paneling, clean trim details, and a refreshed painted surface.”",
+    "description": "Ceiling repair and finish upgrade in Bell with beadboard paneling, clean trim details, and a refreshed painted surface.",
     "images": [
       {
         "src": "/images/projects/2023-ceiling-repair-mufts5tq-mufts5tr-1.jpg",
@@ -295,10 +295,10 @@
   },
   {
     "id": "new-build-mufsrdxd",
-    "service": "Beautiful Kitchen Build Out!",
-    "title": "New Build!",
+    "service": "New Kitchen Installation",
+    "title": "Lake Butler Kitchen Installation With Dark Shaker Cabinets",
     "location": "Lake Butler, Florida",
-    "description": "Affordable kitchen featuring dark shaker cabinets, quartz countertops, subway-tile backsplash, under-cabinet lighting, new flooring, and a built-in workspace.",
+    "description": "Lake Butler kitchen installation featuring dark shaker cabinets, quartz countertops, subway-tile backsplash, under-cabinet lighting, new flooring, and a built-in workspace.",
     "images": [
       {
         "src": "/images/projects/new-build-mufsrdxd-mufsrdxd-1.jpg",
@@ -320,10 +320,10 @@
   },
   {
     "id": "new-kitchen-lake-butler",
-    "service": "Affordable Kitchen Build",
-    "title": "2026 - New Kitchen!",
+    "service": "Kitchen Remodeling",
+    "title": "Lake Butler Kitchen With White Cabinets and Island",
     "location": "Lake Butler, Florida",
-    "description": "Completed January 2026. White cabinetry, pendant lighting, and a central island create a brighter, more functional kitchen.",
+    "description": "Completed in January 2026, this Lake Butler kitchen update added white cabinetry, pendant lighting, and a central island for a brighter, more functional room.",
     "images": [
       {
         "src": "/images/projects/new-kitchen-lake-butler-mufsf6wc-1.jpg",
@@ -337,8 +337,8 @@
   },
   {
     "id": "bathroom-and-finish-work",
-    "service": "Bathroom Makeover!",
-    "title": "Bath Remodel",
+    "service": "Bathroom Remodeling",
+    "title": "Lake Butler Bathroom Vanity and Shower Update",
     "location": "Lake Butler, Florida",
     "description": "Finished bathroom vanity update with a black double-sink cabinet, framed mirrors, warm lighting, white countertop, and dark tile flooring.",
     "images": [
@@ -362,8 +362,8 @@
   },
   {
     "id": "outdoor-and-exterior-updates",
-    "service": "Outdoor Decks",
-    "title": "2022 - Outdoor Deck Remodel",
+    "service": "Deck Building",
+    "title": "Lake Butler Deck Addition With Stairs and Railings",
     "location": "Lake Butler, Florida",
     "description": "Completed pressure-treated deck addition with new stairs, handrails, and a gated enclosure below for safe, practical outdoor access.",
     "images": [

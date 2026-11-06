@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export function ProjectGalleryGrid({ galleries }) {
@@ -49,7 +50,7 @@ export function ProjectGalleryGrid({ galleries }) {
       {selected && <div className="project-modal" role="dialog" aria-modal="true" aria-label={`${selected.title} project photos`}>
         <button className="project-modal-backdrop" type="button" aria-label="Close project viewer" onClick={() => setSelected(null)} />
         <div className="project-modal-panel"><div className="project-modal-header"><div><span>{selected.service}</span><h2>{selected.title}</h2><p>{selected.location}</p></div><button className="project-modal-close" type="button" onClick={() => setSelected(null)}>Close</button></div>
-          <div className="project-modal-media"><Image src={activeImage.src} alt={activeImage.alt} fill sizes="(max-width: 900px) 94vw, 900px" /></div><p className="project-modal-description">{selected.description}</p>
+          <div className="project-modal-media"><Image src={activeImage.src} alt={activeImage.alt} fill sizes="(max-width: 900px) 94vw, 900px" /></div><p className="project-modal-description">{selected.description}</p><div className="project-modal-cta"><p>Thinking about a project like this one?</p><Link className="button" href="/contact" onClick={() => setSelected(null)}>Start a free estimate</Link></div>
           {imageCount > 1 && <><div className="project-modal-actions"><button type="button" onClick={() => setActiveIndex((activeIndex - 1 + imageCount) % imageCount)}>Previous photo</button><span>{activeIndex + 1} of {imageCount}</span><button type="button" onClick={() => setActiveIndex((activeIndex + 1) % imageCount)}>Next photo</button></div><div className="project-modal-thumbnails">{selected.images.map((image, index) => <button className={index === activeIndex ? "is-active" : ""} type="button" onClick={() => setActiveIndex(index)} key={image.src} aria-label={`View photo ${index + 1}`}><Image src={image.src} alt="" fill sizes="90px" /></button>)}</div></>}
         </div>
       </div>}
